@@ -1,0 +1,24 @@
+export const SELECT_RESUME_ITEM = "SELECT_RESUME_ITEM"
+export const ENTER_SITE = "ENTER_SITE"
+
+
+const ui = (state = {
+    
+    showEntryCard : false,
+    selectedResumeItemIndex : 0
+    
+    }, action) =>{
+
+        if(action.type == "SELECT_RESUME_ITEM"){
+            return Object.assign({}, state, {
+                selectedResumeItemIndex : action.index
+            })
+        } 
+
+        if(action.type == ENTER_SITE){
+            return Object.assign({}, state, {showEntryCard : true})
+        }
+        return state
+}
+
+export default ui

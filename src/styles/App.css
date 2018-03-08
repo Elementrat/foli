@@ -1,0 +1,175 @@
+.ResumeItem {
+  background-color: #008000;
+  border: 10px solid #f00;
+  width: 900px;
+  height: 900px;
+}
+.ret {
+  border: 20px solid #ff0;
+  padding: 50px 50px;
+  height: 900px;
+}
+.App {
+  padding: 0px 0px;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Open Sans';
+}
+.Page {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0px auto;
+  background-color: #f0f0f0;
+  border: 50px solid rgba(10,10,10,0.01);
+}
+.NameHolder {
+  font-weight: bold;
+  background-color: #015a67;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+  overflow: hidden;
+  animation: Grow-NameHolder 3s ease;
+  border-bottom: 5px solid #015a67;
+}
+.MyName {
+  margin: auto auto;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 45px;
+}
+.EnterBtn {
+  width: 100%;
+  height: 0px;
+  background-color: #029db3;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  line-height: 40px;
+  animation: Grow-EnterBtn 1s ease forwards;
+  animation-delay: 3.5s;
+}
+@-moz-keyframes Grow-EnterBtn {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40px;
+  }
+}
+@-webkit-keyframes Grow-EnterBtn {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40px;
+  }
+}
+@-o-keyframes Grow-EnterBtn {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40px;
+  }
+}
+@keyframes Grow-EnterBtn {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40px;
+  }
+}
+@-moz-keyframes Grow-NameHolder {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    height: 0px;
+    width: 200px;
+  }
+  100% {
+    height: 200px;
+  }
+}
+@-webkit-keyframes Grow-NameHolder {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    height: 0px;
+    width: 200px;
+  }
+  100% {
+    height: 200px;
+  }
+}
+@-o-keyframes Grow-NameHolder {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    height: 0px;
+    width: 200px;
+  }
+  100% {
+    height: 200px;
+  }
+}
+@keyframes Grow-NameHolder {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    height: 0px;
+    width: 200px;
+  }
+  100% {
+    height: 200px;
+  }
+}
+@-moz-keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

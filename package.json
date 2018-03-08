@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "homepage" : "http://elementrat.github.io/folio",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.1",
+    "redux": "^3.7.2"
+  },
+  "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
+    "start": "start react-scripts start && start stylus -w src/styles/App.styl -o src/App.css",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "redux-devtools": "^3.4.1"
+  }
+}

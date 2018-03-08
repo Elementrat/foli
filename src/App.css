@@ -1,0 +1,485 @@
+.ResumeItems {
+  width: 1024px;
+  height: 100%;
+  padding-top: 5%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  flex-direction: row;
+}
+.ResumeItemDetails {
+  width: 100%;
+  height: 200px;
+  color: #fff;
+  float: left;
+  border-radius: 3px;
+  display: block;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+.ResumeItemDetails .coreInfo {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  border-bottom: 5px solid #012f35;
+  background-color: #fff;
+  padding: 5px 5px;
+}
+.ResumeItemDetails .coreInfo div {
+  color: #012f35;
+  padding: 0px 25px;
+  box-sizing: border-box;
+  text-indent: 0px;
+  float: left;
+  margin-right: 10px;
+}
+.ResumeItemDetails .description {
+  color: #012f35;
+  padding: 25px 25px;
+}
+.resItem {
+  animation: slideIn forwards;
+  float: left;
+  width: 0px;
+  height: 0px;
+  color: #fff;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.resItem .logo {
+  float: left;
+  width: 125px;
+  height: 125px;
+  background-position-x: center;
+  background-position-y: 150px;
+  background-size: 75px 75px;
+  background-repeat: no-repeat;
+  width: 125px;
+  box-sizing: border-box;
+  height: 125px;
+  animation: LogoEnter ease forwards;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+.resItem .item-selected {
+  background-color: #fff;
+  border-bottom: 5px solid #029db3;
+}
+.resItem .item-not-selected {
+  background-color: #fff;
+  border-bottom: 5px solid #fff;
+}
+.resItem .item-not-selected:hover {
+  border-bottom: 5px solid #029db3;
+}
+.resItem .logo:hover {
+  transform: scale(1.2);
+  margin-bottom: 20px;
+}
+.visible {
+  display: flex;
+}
+.invisible {
+  display: none;
+}
+@-moz-keyframes LogoEnter {
+  0% {
+    background-position-y: 200px;
+  }
+  100% {
+    background-position-y: 30px;
+  }
+}
+@-webkit-keyframes LogoEnter {
+  0% {
+    background-position-y: 200px;
+  }
+  100% {
+    background-position-y: 30px;
+  }
+}
+@-o-keyframes LogoEnter {
+  0% {
+    background-position-y: 200px;
+  }
+  100% {
+    background-position-y: 30px;
+  }
+}
+@keyframes LogoEnter {
+  0% {
+    background-position-y: 200px;
+  }
+  100% {
+    background-position-y: 30px;
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    height: 0px;
+    width: 125px;
+  }
+  100% {
+    width: 125px;
+    height: 125px;
+  }
+}
+@-webkit-keyframes slideIn {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    height: 0px;
+    width: 125px;
+  }
+  100% {
+    width: 125px;
+    height: 125px;
+  }
+}
+@-o-keyframes slideIn {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    height: 0px;
+    width: 125px;
+  }
+  100% {
+    width: 125px;
+    height: 125px;
+  }
+}
+@keyframes slideIn {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    height: 0px;
+    width: 125px;
+  }
+  100% {
+    width: 125px;
+    height: 125px;
+  }
+}
+.App {
+  padding: 0px 0px;
+  width: 100vw;
+  font-family: 'Open Sans';
+  overflow-x: hidden;
+  background: #012f35;
+}
+#root {
+  overflow-x: hidden;
+}
+html {
+  background-color: #012f35;
+}
+.grain {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/Grain-Texture-09.png");
+  background-size: contain;
+  background-position: center;
+  opacity: 0.05;
+}
+.App::after {
+  clear: both;
+}
+.Content {
+  margin: 0px auto;
+}
+.Content::after {
+  content: '';
+  clear: both;
+}
+.Page {
+  box-sizing: border-box;
+  margin: 0px auto;
+  width: 1024px;
+  overflow-x: hidden;
+}
+.NameHolder {
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  top: 0;
+  bottom: 0;
+  margin: auto auto;
+  overflow: hidden;
+  border-bottom: 5px solid #029db3;
+  animation-fill-mode: forwards;
+}
+.MyName {
+  margin: auto auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  text-align: left;
+  font-size: 45px;
+  text-shadow: 0px 3px 0 #029db3, -1px -1px 0 #029db3, 1px -1px 0 #029db3, -1px 1px 0 #029db3, 1px 1px 0 #029db3,;
+}
+.EnterBtn {
+  width: 100%;
+  height: 0px;
+  background-color: #029db3;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  line-height: 40px;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  transition: background-color 0.5s, color 0.5s;
+}
+.EnterBtn:hover {
+  background-color: #fff;
+  color: #012f35;
+  cursor: pointer;
+}
+@-moz-keyframes Shrink-EnterBtn {
+  0% {
+    height: 40px;
+  }
+  100% {
+    height: 0x;
+  }
+}
+@-webkit-keyframes Shrink-EnterBtn {
+  0% {
+    height: 40px;
+  }
+  100% {
+    height: 0x;
+  }
+}
+@-o-keyframes Shrink-EnterBtn {
+  0% {
+    height: 40px;
+  }
+  100% {
+    height: 0x;
+  }
+}
+@keyframes Shrink-EnterBtn {
+  0% {
+    height: 40px;
+  }
+  100% {
+    height: 0x;
+  }
+}
+@-moz-keyframes Grow-EnterBtn {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40px;
+  }
+}
+@-webkit-keyframes Grow-EnterBtn {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40px;
+  }
+}
+@-o-keyframes Grow-EnterBtn {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40px;
+  }
+}
+@keyframes Grow-EnterBtn {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 40px;
+  }
+}
+@-moz-keyframes Grow-NameHolder {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    height: 0px;
+    width: 200px;
+  }
+  100% {
+    height: 200px;
+  }
+}
+@-webkit-keyframes Grow-NameHolder {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    height: 0px;
+    width: 200px;
+  }
+  100% {
+    height: 200px;
+  }
+}
+@-o-keyframes Grow-NameHolder {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    height: 0px;
+    width: 200px;
+  }
+  100% {
+    height: 200px;
+  }
+}
+@keyframes Grow-NameHolder {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    height: 0px;
+    width: 200px;
+  }
+  100% {
+    height: 200px;
+  }
+}
+@-moz-keyframes Shrink-NameHolder {
+  0% {
+    height: 200px;
+  }
+  25% {
+    height: 0px;
+    width: 200px;
+  }
+  50% {
+    height: 0px;
+    width: 1024px;
+  }
+  100% {
+    height: 50%;
+    width: 1024px;
+  }
+}
+@-webkit-keyframes Shrink-NameHolder {
+  0% {
+    height: 200px;
+  }
+  25% {
+    height: 0px;
+    width: 200px;
+  }
+  50% {
+    height: 0px;
+    width: 1024px;
+  }
+  100% {
+    height: 50%;
+    width: 1024px;
+  }
+}
+@-o-keyframes Shrink-NameHolder {
+  0% {
+    height: 200px;
+  }
+  25% {
+    height: 0px;
+    width: 200px;
+  }
+  50% {
+    height: 0px;
+    width: 1024px;
+  }
+  100% {
+    height: 50%;
+    width: 1024px;
+  }
+}
+@keyframes Shrink-NameHolder {
+  0% {
+    height: 200px;
+  }
+  25% {
+    height: 0px;
+    width: 200px;
+  }
+  50% {
+    height: 0px;
+    width: 1024px;
+  }
+  100% {
+    height: 50%;
+    width: 1024px;
+  }
+}
+@-moz-keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

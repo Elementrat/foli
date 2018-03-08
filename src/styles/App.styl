@@ -1,0 +1,164 @@
+@require "vars.styl"
+@require "Experiences.styl"
+
+.App {
+    padding 0px 0px
+    width 100vw
+    font-family: 'Open Sans'
+    overflow-x hidden
+    background $darkAccent
+}
+
+#root{
+    overflow-x hidden
+}
+
+html{
+    background-color $darkAccent
+}
+
+.grain{
+    position absolute
+    left 0
+    top 0
+    bottom 0
+    right 0
+    width 100%
+    height 100%
+    background-image url('/img/Grain-Texture-09.png')
+    background-size contain
+    background-position center
+    opacity .05
+}
+
+.App::after{
+    clear both
+}
+
+.Content{
+    margin 0px auto
+}
+
+.Content::after{
+    content ''
+    clear both
+}
+
+.Page{
+    box-sizing border-box
+    margin 0px auto
+    width 1024px
+    overflow-x hidden
+  }
+  
+.NameHolder{
+    font-weight bold
+    color white
+    position absolute
+    left 0
+    right 0
+    height 200px
+    width 200px
+    top 0 
+    bottom 0
+    margin auto auto
+    overflow hidden
+    border-bottom 5px solid $lightAccent
+    animation-fill-mode forwards
+}
+
+.Tagline{
+    
+}
+
+.MyName{
+    margin auto auto
+    padding-left 20px
+    padding-right 20px
+    padding-top 20px
+    text-align left
+    font-size 45px
+    text-shadow:
+       0px 3px 0 $lightAccent,
+     -1px -1px 0 $lightAccent,  
+      1px -1px 0 $lightAccent,
+      -1px 1px 0 $lightAccent,
+       1px 1px 0 $lightAccent,
+}
+
+.EnterBtn{
+    width 100%
+    height 0px
+    background-color $lightAccent
+    overflow hidden
+    position absolute
+    bottom 0px
+    text-align center
+    line-height 40px
+    animation-delay 2.5s
+    animation-fill-mode forwards
+    transition background-color .5s , color .5s
+}
+
+.EnterBtn:hover{
+    background-color white
+    color $darkAccent
+    cursor pointer
+}
+
+@keyframes Shrink-EnterBtn{
+    0%{
+        height 40px
+    }
+    100%{
+        height 0x
+    }
+}
+
+@keyframes Grow-EnterBtn{
+    0%{
+        height 0px
+    }
+    100%{
+        height 40px
+    }
+}
+
+
+@keyframes Grow-NameHolder{
+    0% {
+        width 0px
+        height 0px
+    }
+    50% {
+        height 0px
+        width 200px
+    }
+    100% {
+        height 200px
+    }
+}
+
+@keyframes Shrink-NameHolder{
+    0% {
+        height 200px
+    }
+    25% {
+        height 0px
+        width 200px
+    }
+    50% {
+        height 0px
+        width 1024px
+    }
+    100%{
+        height 50%
+        width 1024px
+    }
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+ 
