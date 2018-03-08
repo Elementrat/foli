@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import xbox_dark from '../img/xbox_dark.png'
+import xbox_light from '../img/xbox_dark.png'
 
 import '../App.css';
 
@@ -29,10 +30,10 @@ render() {
   logoStr +=  isSelected ? '_light' : '_dark'
   let bgColor = isSelected ? 'rgba(255,255,255,255)' : 'rgba(0,0,0,255)'
 
-  let srcString = `url(/img/${logoStr}.png`
+  let srcString = xbox_dark // `url(/img/${logoStr}.png`
 
   let imgBind = {
-    backgroundImage : srcString,
+    backgroundImage : `url(${srcString})`,
     animationDelay : delayTime + .5 +'s',
     animationDuration : '1s',
   }
