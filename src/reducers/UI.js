@@ -4,7 +4,7 @@ export const ENTER_SITE = "ENTER_SITE"
 
 const ui = (state = {
     
-    showEntryCard : false,
+    showEntryCard : true,
     selectedResumeItemIndex : 0
     
     }, action) =>{
@@ -15,8 +15,8 @@ const ui = (state = {
             })
         } 
 
-        if(action.type == ENTER_SITE){
-            return Object.assign({}, state, {showEntryCard : true})
+        if(action.type == "ENTER_SITE"){
+            return Object.assign({}, state, {showEntryCard : false})
         }
         return state
 }

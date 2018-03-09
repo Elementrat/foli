@@ -16,7 +16,20 @@ render() {
     let detailsClasses = `ResumeItemDetails ${vis}`
 
     return (
-        <div class name = "Resume">
+        <div className = "Resume">
+
+        <div className = "menu">
+            <div class = "menu-item selected">
+                Prior Experience
+            </div>
+            <div class = "menu-item not-selected">
+                Skills
+            </div>
+            <div class = "menu-item not-selected">
+                Interests
+            </div>
+        </div>
+
         <div className = {itemClasses} >
         {
             //this.props.experiences

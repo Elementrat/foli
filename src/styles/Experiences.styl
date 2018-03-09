@@ -2,31 +2,66 @@
 
 $itemHeight = 125px
 $radiusSize = 3px
+$spacerSize = 2px
+
+.Resume{
+    background-color white
+}
+
+.menu{
+    height 50px
+    background-color $darkAccent
+    line-height 50px
+    border-bottom $spacerSize solid $darkAccent
+    color white
+}
+
+.menu-item{
+    margin-bottom $spacerSize
+    float left
+    padding 0px 25px
+    cursor pointer
+
+    .selected{
+        background-color white
+    }
+
+    .not-selected{
+        background-color black    
+        &:hover{
+            background-color red
+        }
+    }
+}
+
+.selected{
+    background-color white   
+    color $darkAccent 
+}
+
+.not-selected{
+    background-color black    
+}
 
 .ResumeItems{
     width 1024px
-    height 100%
-    padding-top 5%
-    left 0
-    right 0
-    top 0
-    bottom 0
+    height $itemHeight
     margin auto auto
     display flex
     align-items center
     justify-content center
     align-self center
     flex-direction row
+    background-color white
 }
 
 .ResumeItemDetails{
     width 100%
-    height 200px
+    background-color whites
     color white
-    float left
     border-radius $radiusSize
     display block
-    background-color white
+    min-height 100px
     flex-wrap wrap
 
     .coreInfo{
@@ -34,8 +69,9 @@ $radiusSize = 3px
         height 50px
         line-height 50px
         font-weight bold
-        border-bottom 5px solid $darkAccent
+        border-top $spacerSize solid $darkAccent
         background-color white
+        border-bottom $spacerSize solid $darkAccent
         padding 5px 5px
 
         div{
@@ -54,6 +90,10 @@ $radiusSize = 3px
 
     .description{
         color $darkAccent
+        display flex
+        float left
+        padding-top 0px
+        height 300px
         padding 25px 25px
     }
 
@@ -70,14 +110,12 @@ $radiusSize = 3px
     height 0px
     color white
     white-space nowrap
-    margin-bottom 20px
     box-sizing border-box
     overflow hidden
     background-color white
     margin-right 10px
     cursor pointer
-    border-radius $radiusSize
-
+   
     .logo{
         float left
         width $itemHeight
@@ -91,28 +129,19 @@ $radiusSize = 3px
         height $itemHeight
         animation LogoEnter ease forwards
         transition all .3s ease
-        transform scale(1)
+       // transform scale(1)
     }
 
-        .item-selected{
-            background-color white
-            border-bottom 5px solid $lightAccent
-        }
+    & .item-selected{
+            border-bottom 5px solid $darkAccent
+            
+    }
 
-        .item-not-selected{
-            background-color white
-            border-bottom 5px solid white
+    &  .item-not-selected{
             &:hover{
                 border-bottom 5px solid $lightAccent
             }
         }
-
-
-    .logo:hover{
-        transform scale(1.2)   
-        margin-bottom 20px 
-    }
-
 }
 
 @keyframes LogoEnter{
@@ -147,5 +176,4 @@ $radiusSize = 3px
 
 .invisible{
     display none
-
 }

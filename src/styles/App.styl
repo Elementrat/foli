@@ -53,8 +53,8 @@ html{
   
 .NameHolder{
     font-weight bold
-    color white
     position absolute
+    color white
     left 0
     right 0
     height 200px
@@ -72,11 +72,14 @@ html{
 }
 
 .MyName{
-    margin auto auto
-    padding-left 20px
-    padding-right 20px
+    padding-left 25px
+    padding-right 25px
     padding-top 20px
     text-align left
+    color white
+    padding-bottom 15px
+    margin-bottom 45px
+    background-color $darkAccent
     font-size 45px
     text-shadow:
        0px 3px 0 $lightAccent,
@@ -147,9 +150,16 @@ html{
         height 0px
         width 200px
     }
+    49%{
+        background-color $darkAccent
+    }
     50% {
         height 0px
         width 1024px
+        background-color $darkAccent
+    }
+    51% {
+        color $darkAccent
     }
     100%{
         height 50%
