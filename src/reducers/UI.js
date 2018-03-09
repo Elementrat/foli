@@ -5,6 +5,7 @@ export const ENTER_SITE = "ENTER_SITE"
 const ui = (state = {
     
     showEntryCard : true,
+    activeTab : "experience",
     selectedResumeItemIndex : 0
     
     }, action) =>{
@@ -17,6 +18,10 @@ const ui = (state = {
 
         if(action.type == "ENTER_SITE"){
             return Object.assign({}, state, {showEntryCard : false})
+        }
+
+        if(action.type == "CHANGE_TAB"){
+            return Object.assign({}, state, {activeTab : action.tab} )
         }
         return state
 }

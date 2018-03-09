@@ -7,6 +7,13 @@ class ExperiencesComponent extends Component {
 constructor(props){
     super(props)
     this.selectedItemIndex = 0
+    this.lastKnownSelected = 0
+    this.props.onChangeTabClick.bind(this, )
+}
+
+onChangeTabClick(tab, e){
+    e.preventDefault()
+    this.props.onChangeTabClick(tab)
 }
 
 render() {
@@ -15,17 +22,27 @@ render() {
     const itemClasses = `ResumeItems ${vis}` 
     let detailsClasses = `ResumeItemDetails ${vis}`
 
+    let randDir = Math.random()
+
+    let isSelected = function(tab){
+
+    }
+
+    let coreInfoAni = {
+       // animation : `coreInfo-In ${randDir}s ease forwards`
+    }
+
     return (
         <div className = "Resume">
 
         <div className = "menu">
-            <div class = "menu-item selected">
+            <div class = {this.props.ui.activeTab == 'experience' ? 'menu-item selected' : 'menu-item not-selected'} onClick = {() => this.props.onChangeTabClick('experience')}>
                 Prior Experience
             </div>
-            <div class = "menu-item not-selected">
+            <div class = {this.props.ui.activeTab == 'skills' ? 'menu-item selected' : 'menu-item not-selected'}   onClick = {()=> this.props.onChangeTabClick('skills')}>
                 Skills
             </div>
-            <div class = "menu-item not-selected">
+            <div class = {this.props.ui.activeTab == 'interests' ? 'menu-item selected' : 'menu-item not-selected'}   onClick = {()=>this.props.onChangeTabClick('interests')}>
                 Interests
             </div>
         </div>
@@ -41,7 +58,7 @@ render() {
         </div>
         <div class = {detailsClasses}>
             <div class = "coreInfo">
-                <div class = "company">
+                <div className = "company" style = {coreInfoAni}>
                     {this.props.experiences[this.props.ui.selectedResumeItemIndex].company}
                 </div>
                 <div class = "title">

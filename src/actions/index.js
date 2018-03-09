@@ -10,3 +10,10 @@ export const selectResumeItem = (indexIn) => {
         index : indexIn
     }
 }
+
+export const changeTab = (tab) =>{
+    return {
+        type : "CHANGE_TAB",
+        tab
+    }
+}

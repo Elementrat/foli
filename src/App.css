@@ -7,10 +7,10 @@
   margin: 0px auto;
   display: flex;
   justify-content: center;
-  margin-bottom: 5px;
-  background-color: #012f35;
+  margin-bottom: 15px;
+  background-color: #015a67;
   line-height: 50px;
-  border-bottom: 2px solid #012f35;
+  border-bottom: 2px solid #015a67;
   color: #fff;
 }
 .menu-item {
@@ -30,7 +30,7 @@
 }
 .selected {
   background-color: #fff;
-  color: #012f35;
+  color: #015a67;
 }
 .not-selected {
   background-color: #000;
@@ -47,7 +47,7 @@
   flex-direction: row;
 }
 .ResumeItemDetails {
-  width: 90%;
+  width: 1000px;
   margin: 0px auto;
   background-color: whites;
   color: #fff;
@@ -61,9 +61,9 @@
   height: 50px;
   line-height: 50px;
   font-weight: bold;
-  border-top: 2px solid #012f35;
+  border-top: 2px solid #015a67;
   background-color: #000;
-  margin-bottom: 2px solid #012f35;
+  margin-bottom: 2px solid #015a67;
   padding: 5px 5px;
 }
 .ResumeItemDetails .coreInfo div {
@@ -75,7 +75,7 @@
   margin-right: 10px;
 }
 .ResumeItemDetails .description {
-  color: #012f35;
+  color: #015a67;
   display: flex;
   float: left;
   padding-top: 0px;
@@ -211,18 +211,58 @@
     height: 125px;
   }
 }
+@-moz-keyframes coreInfo-In {
+  0% {
+    height: 0px;
+    background-color: #00f;
+  }
+  100% {
+    height: 100px;
+    background-color: #f00;
+  }
+}
+@-webkit-keyframes coreInfo-In {
+  0% {
+    height: 0px;
+    background-color: #00f;
+  }
+  100% {
+    height: 100px;
+    background-color: #f00;
+  }
+}
+@-o-keyframes coreInfo-In {
+  0% {
+    height: 0px;
+    background-color: #00f;
+  }
+  100% {
+    height: 100px;
+    background-color: #f00;
+  }
+}
+@keyframes coreInfo-In {
+  0% {
+    height: 0px;
+    background-color: #00f;
+  }
+  100% {
+    height: 100px;
+    background-color: #f00;
+  }
+}
 .App {
   padding: 0px 0px;
   width: 100vw;
   font-family: 'Open Sans';
   overflow-x: hidden;
-  background: #012f35;
+  background: #015a67;
 }
 #root {
   overflow-x: hidden;
 }
 html {
-  background-color: #012f35;
+  background-color: #015a67;
 }
 .grain {
   position: absolute;
@@ -276,7 +316,7 @@ html {
   color: #fff;
   padding-bottom: 15px;
   margin-bottom: 45px;
-  background-color: #012f35;
+  background-color: #015a67;
   font-size: 45px;
   text-shadow: 0px 3px 0 #029db3, -1px -1px 0 #029db3, 1px -1px 0 #029db3, -1px 1px 0 #029db3, 1px 1px 0 #029db3,;
 }
@@ -295,7 +335,7 @@ html {
 }
 .EnterBtn:hover {
   background-color: #fff;
-  color: #012f35;
+  color: #015a67;
   cursor: pointer;
 }
 @-moz-keyframes Shrink-EnterBtn {
@@ -423,20 +463,24 @@ html {
     width: 200px;
   }
   49% {
-    background-color: #012f35;
+    background-color: #015a67;
   }
   50% {
     height: 0px;
     width: 1024px;
-    background-color: #012f35;
+    background-color: #015a67;
   }
   51% {
-    color: #012f35;
+    color: #015a67;
+    border-bottom: 5px solid #fff;
+  }
+  90% {
+    color: #015a67;
     border-bottom: 5px solid #fff;
   }
   100% {
     height: 50%;
-    border-bottom: 0px solid rgba(255,255,255,0);
+    border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }
 }
@@ -449,20 +493,24 @@ html {
     width: 200px;
   }
   49% {
-    background-color: #012f35;
+    background-color: #015a67;
   }
   50% {
     height: 0px;
     width: 1024px;
-    background-color: #012f35;
+    background-color: #015a67;
   }
   51% {
-    color: #012f35;
+    color: #015a67;
+    border-bottom: 5px solid #fff;
+  }
+  90% {
+    color: #015a67;
     border-bottom: 5px solid #fff;
   }
   100% {
     height: 50%;
-    border-bottom: 0px solid rgba(255,255,255,0);
+    border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }
 }
@@ -475,20 +523,24 @@ html {
     width: 200px;
   }
   49% {
-    background-color: #012f35;
+    background-color: #015a67;
   }
   50% {
     height: 0px;
     width: 1024px;
-    background-color: #012f35;
+    background-color: #015a67;
   }
   51% {
-    color: #012f35;
+    color: #015a67;
+    border-bottom: 5px solid #fff;
+  }
+  90% {
+    color: #015a67;
     border-bottom: 5px solid #fff;
   }
   100% {
     height: 50%;
-    border-bottom: 0px solid rgba(255,255,255,0);
+    border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }
 }
@@ -501,20 +553,24 @@ html {
     width: 200px;
   }
   49% {
-    background-color: #012f35;
+    background-color: #015a67;
   }
   50% {
     height: 0px;
     width: 1024px;
-    background-color: #012f35;
+    background-color: #015a67;
   }
   51% {
-    color: #012f35;
+    color: #015a67;
+    border-bottom: 5px solid #fff;
+  }
+  90% {
+    color: #015a67;
     border-bottom: 5px solid #fff;
   }
   100% {
     height: 50%;
-    border-bottom: 0px solid rgba(255,255,255,0);
+    border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }
 }
