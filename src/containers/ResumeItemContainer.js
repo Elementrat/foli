@@ -5,7 +5,7 @@ import ResumeItemComponent from '../components/ResumeItemComponent'
 const mapStateToProps = state => {
     return {
        selectedResumeItemIndex : state.ui.selectedResumeItemIndex,
-       experiences : state.experiences
+       portfoliodata : state.portfoliodata
     }
 }
 

@@ -1,11 +1,11 @@
 import { connect } from 'react-redux'
-import { enterSite, changeTab } from '../actions/index.js'
+import { enterSite } from '../actions/index.js'
 import ExperiencesComponent from '../components/ExperiencesComponent'
 
 
 const mapStateToProps = state => {
     return {
-        experiences : state.experiences,
+        portfoliodata : state.portfoliodata,
         ui : state.ui
     }
 }
@@ -15,10 +15,6 @@ const mapDispatchToProps = dispatch => {
         onEnterClick : () => {
             dispatch(enterSite())
         },
-
-        onChangeTabClick : (tab) =>{
-            dispatch(changeTab(tab))
-        }
     }
 }
 

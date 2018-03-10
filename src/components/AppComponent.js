@@ -13,24 +13,14 @@ class AppComponent extends React.Component {
 
   render() {
 
-    let elms = <div className="App">
-    <div class = "grain"> </div>
-    
-    
-    <div className = "Page">
-      <div className = "Content">
-        {
-        // <Experiences />
-        }
+    let elms =
+      <div className="App">
+        <div class = "grain"> </div>
+        <EntryCard/>
       </div>
-    </div>
 
-    <EntryCard/>
-   
-  </div>
-
-  return elms
-  
+    return elms
+    
   }
 }
 

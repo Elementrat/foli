@@ -1,0 +1,63 @@
+$navHeight = 50px
+
+.Nav{
+    height $navHeight
+    display flex
+    line-height $navHeight
+    color white
+    margin-bottom 10px
+    padding 0px 40px
+    align-items center
+
+    .icon{
+        width $navHeight*.8
+        height $navHeight*.8
+        flex-shrink 0
+        padding 0px 0px
+        margin-left: 10px
+        fill white
+    }
+
+    .name{
+        float left
+        flex-basis auto
+        flex-shrink 0
+        font-weight 800
+    }
+
+    .email{
+        float right
+        flex-basis auto
+        width 1
+        flex-shrink 0
+    }
+
+}
+
+
+.menu{
+    width 90%
+    margin 0px auto
+    display flex 
+    justify-content center
+    color white
+    position relative
+}
+
+.menu-item{
+    float left
+    padding 0px 25px
+    cursor pointer
+
+    .selected{
+        background-color white
+    }
+
+    .not-selected{
+        background-color black    
+        &:hover{
+            background-color red
+        }
+       
+    }
+}

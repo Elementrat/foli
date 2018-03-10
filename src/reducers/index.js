@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
-import experiences from './experiences' 
+import portfoliodata from './portfoliodata' 
 import ui from './UI'
 
 const portfolioApp = combineReducers({
-    experiences, ui
+    portfoliodata, ui
 })
 
 export default portfolioApp

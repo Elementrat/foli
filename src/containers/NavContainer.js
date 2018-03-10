@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
-import { enterSite, changeTab  } from '../actions/index.js'
-import EntryCardComponent from '../components/EntryCardComponent'
+import { changeTab  } from '../actions/index.js'
+import NavComponent from '../components/NavComponent'
 
 
 const mapStateToProps = state => {
@@ -11,9 +11,6 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onEnterClick : () => {
-            dispatch(enterSite())
-        },
         onChangeTabClick : (tab) =>{
             dispatch(changeTab(tab))
         }
@@ -21,9 +18,9 @@ const mapDispatchToProps = dispatch => {
 }
 
 
-const EntryCard = connect(
+const Nav = connect(
     mapStateToProps,
     mapDispatchToProps
-)(EntryCardComponent)
+)(NavComponent)
 
-export default EntryCard
+export default Nav

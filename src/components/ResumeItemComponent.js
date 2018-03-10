@@ -42,12 +42,11 @@ handleClick = () =>{
 
 render() {
 
-  let delayIndex = this.props.index
-  let delayTime = .5 + delayIndex
+  let delayIndex = Number(this.props.index)
+  let delayTime = (delayIndex*.3)
 
   let delayerCSS = {
-    animationDelay : delayTime + .5 +'s',
-    animationDuration : '1s'
+    animationDelay : delayTime +  +'s',
   }
 
   let logoStr = this.props.experience.logo
@@ -60,7 +59,7 @@ render() {
 
   let imgBind = {
     backgroundImage : `url(${srcString})`,
-    animationDelay : delayTime *.1 +'s',
+    animationDelay : delayTime +'s',
     animationDuration : '.5s',
   }
 

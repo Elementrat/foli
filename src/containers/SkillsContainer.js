@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 import { enterSite } from '../actions/index.js'
-import AppComponent from '../components/AppComponent'
+import SkillsComponent from '../components/SkillsComponent'
+
 
 const mapStateToProps = state => {
     return {
@@ -11,15 +12,13 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        onEnterClick : () => {
-            dispatch(enterSite())
-        }
+
     }
 }
 
-const App = connect(
+const Skills = connect(
     mapStateToProps,
     mapDispatchToProps
-)(AppComponent)
+)(SkillsComponent)
 
-export default App
+export default Skills

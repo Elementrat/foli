@@ -8,13 +8,9 @@ constructor(props){
     super(props)
     this.selectedItemIndex = 0
     this.lastKnownSelected = 0
-    this.props.onChangeTabClick.bind(this, )
+  
 }
 
-onChangeTabClick(tab, e){
-    e.preventDefault()
-    this.props.onChangeTabClick(tab)
-}
 
 render() {
 
@@ -23,11 +19,6 @@ render() {
     let detailsClasses = `ResumeItemDetails ${vis}`
 
     let randDir = Math.random()
-
-    let isSelected = function(tab){
-
-    }
-
     let coreInfoAni = {
        // animation : `coreInfo-In ${randDir}s ease forwards`
     }
@@ -35,22 +26,10 @@ render() {
     return (
         <div className = "Resume">
 
-        <div className = "menu">
-            <div class = {this.props.ui.activeTab == 'experience' ? 'menu-item selected' : 'menu-item not-selected'} onClick = {() => this.props.onChangeTabClick('experience')}>
-                Prior Experience
-            </div>
-            <div class = {this.props.ui.activeTab == 'skills' ? 'menu-item selected' : 'menu-item not-selected'}   onClick = {()=> this.props.onChangeTabClick('skills')}>
-                Skills
-            </div>
-            <div class = {this.props.ui.activeTab == 'interests' ? 'menu-item selected' : 'menu-item not-selected'}   onClick = {()=>this.props.onChangeTabClick('interests')}>
-                Interests
-            </div>
-        </div>
-
-        <div className = {itemClasses} >
+        <div className = {itemClasses} > 
         {
             //this.props.experiences
-            this.props.experiences.map((exp, i) =>
+            this.props.portfoliodata.experiences.map((exp, i) =>
                 <ResumeItem experience = {exp}  index={i}/>
             )
         }
@@ -59,18 +38,17 @@ render() {
         <div class = {detailsClasses}>
             <div class = "coreInfo">
                 <div className = "company" style = {coreInfoAni}>
-                    {this.props.experiences[this.props.ui.selectedResumeItemIndex].company}
+                    {this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].company}
                 </div>
                 <div class = "title">
-                {this.props.experiences[this.props.ui.selectedResumeItemIndex].title}
+                {this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].title}
                 </div>
             </div>
 
             <div class = "description">
-            {this.props.experiences[this.props.ui.selectedResumeItemIndex].description}
+                {this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].description}
                 </div>
-
-        </div>
+            </div>
         </div>
         
     )

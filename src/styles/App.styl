@@ -1,20 +1,17 @@
 @require "vars.styl"
 @require "Experiences.styl"
+@require "Skills.styl"
+@require "Nav.styl"
 
 .App {
     padding 0px 0px
     width 100vw
     font-family: 'Open Sans'
-    overflow-x hidden
-    background $darkAccent
-}
-
-#root{
-    overflow-x hidden
 }
 
 html{
     background-color $darkAccent
+    font-weight 400
 }
 
 .grain{
@@ -30,29 +27,9 @@ html{
     background-position center
     opacity .05
 }
-
-.App::after{
-    clear both
-}
-
-.Content{
-    margin 0px auto
-}
-
-.Content::after{
-    content ''
-    clear both
-}
-
-.Page{
-    box-sizing border-box
-    margin 0px auto
-    width 1024px
-    overflow-x hidden
-  }
   
 .NameHolder{
-    font-weight bold
+    font-weight 400
     position absolute
     color white
     left 0
@@ -67,11 +44,8 @@ html{
     animation-fill-mode forwards
 }
 
-.Tagline{
-    
-}
-
 .MyName{
+    font-weight bold
     padding-left 25px
     padding-right 25px
     padding-top 20px
@@ -81,12 +55,7 @@ html{
     margin-bottom 45px
     background-color $darkAccent
     font-size 45px
-    text-shadow:
-       0px 3px 0 $lightAccent,
-     -1px -1px 0 $lightAccent,  
-      1px -1px 0 $lightAccent,
-      -1px 1px 0 $lightAccent,
-       1px 1px 0 $lightAccent,
+
 }
 
 .EnterBtn{
@@ -168,14 +137,8 @@ html{
     }
 
     100%{
-        height 50%
+        height 70%
         border-bottom 5px solid rgba(255,255,255,0)
         width 1024px
     }
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
- 
