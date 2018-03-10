@@ -26,7 +26,7 @@ checkTabActive(tabStr){
 }
 
 render() {
-    let containerAnimation = this.props.ui.showEntryCard  ? "Grow-NameHolder 1s forwards" : 'Shrink-NameHolder 2s forwards'
+    let containerAnimation = this.props.ui.showEntryCard  ? "Grow-NameHolder 1s forwards" : 'Shrink-NameHolder 4s forwards'
 
     let btnAnimation = this.props.ui.showEntryCard ? 'Grow-EnterBtn .4s ease forwards' : 'Shrink-EnterBtn .4s forwards'
 

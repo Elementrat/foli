@@ -40,13 +40,9 @@ class NavComponent extends React.Component{
         </div>  
 
         <div class = "icons">
-            <img class = "icon" src={gh} fill ="#FFF"/>
-
-
-
-            <img class = "icon" src={linkedin}/>
-            </div>
-
+        
+            <a href = "https://github.com/Elementrat" target = "_blank"> <img class = "icon" src={gh} fill ="#FFF"/> </a>
+            <a href = "https://www.linkedin.com/in/alex-sohail-1bb98a54/" target = "_blank"> <img class = "icon" src={linkedin}/> </a> </div>
 
         </div>
         )
