@@ -6,23 +6,29 @@ $navHeight = 50px
     line-height $navHeight
     color white
     margin-bottom 10px
-    padding 0px 40px
     align-items center
-    overflow: hidden
+    margin-top 70px
+    padding 0px 25px
 
-    .icon{
-        width $navHeight*.8
-        height $navHeight*.8
-        flex-shrink 0
-        padding 0px 0px
-        margin-left: 10px
-        fill white
+
+    .icons{  
+        display flex
+        align-items center
+        .icon{
+            width $navHeight*.8
+            height $navHeight*.8
+            flex-shrink 0
+            padding 0px 0px
+            margin-left: 10px
+            fill white
+        }
     }
 
     .name{
         float left
         flex-basis auto
         flex-shrink 0
+        font-size 32px
         font-weight 800
     }
 
@@ -37,7 +43,7 @@ $navHeight = 50px
 
 
 .menu{
-    width 90%
+    width 100%
     margin 0px auto
     display flex 
     justify-content center

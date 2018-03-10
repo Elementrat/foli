@@ -43,6 +43,7 @@
   padding: 0px 25px;
   box-sizing: border-box;
   text-indent: 0px;
+  font-size: 1.2rem;
   float: left;
   margin-right: 10px;
 }
@@ -55,6 +56,7 @@
   padding: 25px 25px;
   background-color: #fff;
   width: 100%;
+  font-size: 1.5rem;
 }
 .resItem {
   animation: slideIn forwards;
@@ -223,28 +225,78 @@
     background-color: #f00;
   }
 }
-.skill {
-  background-color: #015a67;
-  padding: 10px 10px;
-  float: left;
-  color: #015a67;
-  clear: both;
-  color: #fff;
-}
 .Skills {
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
   padding: 25px 25px;
 }
 .Skills div {
   margin-bottom: 10px;
 }
+.Skills .skill-column {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-width: 300px;
+}
+.Skills .skill-column .skillbox {
+  color: #015a67;
+  height: 50px;
+}
+.Skills .skill-column .skillbox .skill {
+  float: left;
+  animation: Skill-In 1s ease forwards;
+  height: 0px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
 .Skills .skill-type {
   float: left;
   clear: both;
-  padding: 20px 20px;
+  padding: 15px 15px;
+  font-weight: 700;
   background-color: #029db3;
+}
+@-moz-keyframes Skill-In {
+  0% {
+    height: 0px;
+    padding: 0px 0px;
+  }
+  100% {
+    height: 20px;
+    padding: 15px 15px;
+  }
+}
+@-webkit-keyframes Skill-In {
+  0% {
+    height: 0px;
+    padding: 0px 0px;
+  }
+  100% {
+    height: 20px;
+    padding: 15px 15px;
+  }
+}
+@-o-keyframes Skill-In {
+  0% {
+    height: 0px;
+    padding: 0px 0px;
+  }
+  100% {
+    height: 20px;
+    padding: 15px 15px;
+  }
+}
+@keyframes Skill-In {
+  0% {
+    height: 0px;
+    padding: 0px 0px;
+  }
+  100% {
+    height: 20px;
+    padding: 15px 15px;
+  }
 }
 .Nav {
   height: 50px;
@@ -252,11 +304,15 @@
   line-height: 50px;
   color: #fff;
   margin-bottom: 10px;
-  padding: 0px 40px;
   align-items: center;
-  overflow: hidden;
+  margin-top: 70px;
+  padding: 0px 25px;
 }
-.Nav .icon {
+.Nav .icons {
+  display: flex;
+  align-items: center;
+}
+.Nav .icons .icon {
   width: 40px;
   height: 40px;
   flex-shrink: 0;
@@ -268,6 +324,7 @@
   float: left;
   flex-basis: auto;
   flex-shrink: 0;
+  font-size: 32px;
   font-weight: 800;
 }
 .Nav .email {
@@ -277,7 +334,7 @@
   flex-shrink: 0;
 }
 .menu {
-  width: 90%;
+  width: 100%;
   margin: 0px auto;
   display: flex;
   justify-content: center;
@@ -339,13 +396,18 @@ html {
   font-weight: bold;
   padding-left: 25px;
   padding-right: 25px;
-  padding-top: 20px;
   text-align: left;
   color: #fff;
-  padding-bottom: 15px;
-  margin-bottom: 45px;
-  background-color: #015a67;
   font-size: 45px;
+  overflow: hidden;
+  transition: height 1s ease;
+}
+.Big-Name {
+  height: 200px;
+  color: #fff;
+}
+.Small-Name {
+  height: 0px;
 }
 .EnterBtn {
   width: 100%;
@@ -506,7 +568,7 @@ html {
     border-bottom: 5px solid #fff;
   }
   100% {
-    height: 70%;
+    height: 80vh;
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }
@@ -536,7 +598,7 @@ html {
     border-bottom: 5px solid #fff;
   }
   100% {
-    height: 70%;
+    height: 80vh;
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }
@@ -566,7 +628,7 @@ html {
     border-bottom: 5px solid #fff;
   }
   100% {
-    height: 70%;
+    height: 80vh;
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }
@@ -596,7 +658,7 @@ html {
     border-bottom: 5px solid #fff;
   }
   100% {
-    height: 70%;
+    height: 80vh;
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }

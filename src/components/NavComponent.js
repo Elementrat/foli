@@ -38,12 +38,14 @@ class NavComponent extends React.Component{
         <div class = "email">    
          
         </div>  
+
+        <div class = "icons">
             <img class = "icon" src={gh} fill ="#FFF"/>
 
 
 
             <img class = "icon" src={linkedin}/>
-
+            </div>
 
 
         </div>

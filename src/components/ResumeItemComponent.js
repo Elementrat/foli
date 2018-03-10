@@ -45,10 +45,6 @@ render() {
   let delayIndex = Number(this.props.index)
   let delayTime = (delayIndex*.3)
 
-  let delayerCSS = {
-    animationDelay : delayTime +  +'s',
-  }
-
   let logoStr = this.props.experience.logo
   let isSelected = this.props.index == this.props.selectedResumeItemIndex
 
@@ -69,7 +65,7 @@ render() {
   let resItemClasses = `resItem ${imgClassName}`
 
     return (
-      <div className = {resItemClasses} style = {delayerCSS} onClick = {this.handleClick}>
+      <div className = {resItemClasses} onClick = {this.handleClick}>
 
         <div className = {imgClasses} style = {imgBind}>
 

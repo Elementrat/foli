@@ -1,28 +1,54 @@
 @require "vars.styl"
 
-.skill{
-    background-color $darkAccent
-    padding 10px 10px
-    float left
-    color $darkAccent
-    clear both
-    color white
+@keyframes Skill-In{
+    0%{
+        height 0px
+        padding 0px 0px
+    }    
+    100%{
+        height 20px
+        padding 15px 15px
+    }
 }
 
 .Skills{
 
     display flex
     justify-content space-between
-    background-color: white
     padding 25px 25px
 
     div{
         margin-bottom 10px
     }
+
+    .skill-column{
+        display flex
+        flex-direction column
+        flex-shrink 0
+        min-width 300px
+      
+        .skillbox{
+            color $darkAccent
+            height 50px
+
+            .skill{
+                float left
+                animation Skill-In 1s ease forwards
+                height 0px
+                overflow hidden
+                background-color white
+                margin-bottom 15px
+            }
+        }
+    }
+
     .skill-type{
         float left
         clear both
-        padding 20px 20px
+        padding 15px 15px
+        font-weight 700
         background-color $lightAccent
+
+        
     }    
 }

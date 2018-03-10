@@ -30,6 +30,8 @@ render() {
 
     let btnAnimation = this.props.ui.showEntryCard ? 'Grow-EnterBtn .4s ease forwards' : 'Shrink-EnterBtn .4s forwards'
 
+    let nameTransition = this.props.ui.showEntryCard ? 'Big-Name' : 'Small-Name'
+
     let containerCSS = {
       animation : containerAnimation,
       animationDelay : "0s"
@@ -40,10 +42,12 @@ render() {
       animationDelay : "1s"
     }
 
+    let nameClasses = `MyName ${nameTransition}`
+
     let elms =
     <div className = "NameHolder" style = {containerCSS}>
 
-      <div className = "MyName">
+      <div className = {nameClasses}>
         Alex Sohail
       </div>
 
