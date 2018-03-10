@@ -52,16 +52,16 @@ var testData = {
     ],
     interests : [
       {
-        name : "3D Modelling",
+        name : "Project Management",
       },
       {
-        name : "Project Management",
+        name : "UX & Interaction Design",
       },
       {
         name : "Game Design & Dev",
       },
       {
-        name : "UX & Interaction Design",
+        name : "3D Modelling",
       },
       {
         name : "Graphic Design",
