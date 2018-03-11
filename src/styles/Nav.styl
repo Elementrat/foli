@@ -62,6 +62,16 @@ $navHeight = 50px
     align-items center
     color white
     position relative
+    
+    .selected{
+        background-color white   
+        color $darkAccent 
+    }
+
+    .not-selected{
+        background-color $darkAccent    
+    }
+
 }
 
 .menu-item{
@@ -80,19 +90,5 @@ $navHeight = 50px
         content ''
         position absolute
 
-    }
-
-    .selected{
-        background-color white
-
-    }
-
-    .not-selected{
-        background-color black  
-
-        & :hover{
-            background-color red
-        }
-       
     }
 }

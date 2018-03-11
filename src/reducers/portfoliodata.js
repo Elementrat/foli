@@ -90,7 +90,7 @@ var testData = {
   experiences : [
       {
         company : "Elementrat Games",
-        title : "Freelance Game Developer (High School)",
+        title : "Freelance Game Developer",
         description : "During High School, I designed, developed, and released several flash-based games.",
         start : "",
         logo : "elementrat",
@@ -119,7 +119,7 @@ var testData = {
         company : "Microsoft - Office",
         title : "Program Manager Intern",
         description : "Worked on features for browser-based PowerPoint presenters",
-        bullets : ["Gathered requirements from stakeholders", "Worked with developers to build plan", "Developed and communicated product vision to leadership", "Wrote detailed technical specifications"],
+        bullets : ["Gathered requirements from stakeholders", "Worked with developers to build plan", "Presented product vision to leadership", "Wrote detailed technical specifications"],
         start : "",
         logo : "office"
       },
@@ -127,7 +127,7 @@ var testData = {
         company : "Microsoft - Skype",
         title : "Program Manager Intern",
         description : "Worked on features to improve large meeting scenario experience",
-        bullets : ["Gathered requirements from stakeholders", "Developed and communicated product vision to leadership", "Wrote detailed technical specifications", "Developed and demo'd proof of concept feature prototype"],
+        bullets : ["Gathered requirements from stakeholders", "Presented product vision to leadership", "Wrote detailed technical specifications", "Developed and demo'd proof of concept feature prototype"],
         start : "",
         logo : "skype"
       },
@@ -147,7 +147,7 @@ var testData = {
         start : "",
         logo : "xbox",
         images : ["minecraft"],
-        bullets : ["Responsible for a number of feature areas: Xbox App Notifications, Settings, Localization, Live Tile, XBL Signup/Sign-In + More ", "Drove daily product development standups", "Gathered + synthesized requirements from stakeholders" , "Developed and communicated product vision", "Communicated project status and risks to leadership", "Wrote tools to improve internal proccesses"],
+        bullets : ["Responsible for a number of feature areas: Xbox App Notifications, Settings, Localization, Live Tile, XBL Signup/Sign-In + More ", "Drove daily product development standups", "Gathered + synthesized partner requirements" , "Developed and communicated product vision", "Communicated project status to leadership", "Wrote tools to improve internal proccesses"],
       }
     ]
 }
