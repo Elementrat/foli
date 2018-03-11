@@ -104,7 +104,7 @@ var testData = {
         start : "",
         logo : "afpc",
         images : ["afpcsite_testimonial"],
-        bullets : ["Designed company's visual identity", "Designed and wrote promotional material", "Reformed work processes to improve org. efficiency", "Designed and developed company site", ]
+        bullets : ["Designed company's visual identity", "Designed and wrote promotional material", "Improved org. efficiency", "Designed + developed company site", "Designed + developed apps and services"]
       },
       {
         company : "Door-6",
@@ -127,7 +127,7 @@ var testData = {
         company : "Microsoft - Skype",
         title : "Program Manager Intern",
         description : "Worked on features to improve large meeting scenario experience",
-        bullets : ["Gathered requirements from stakeholders", "Presented product vision to leadership", "Wrote detailed technical specifications", "Developed and demo'd proof of concept feature prototype"],
+        bullets : ["Gathered requirements from stakeholders", "Presented product vision to leadership", "Wrote detailed technical specifications", "Developed proof of concept feature prototype"],
         start : "",
         logo : "skype"
       },
