@@ -42,37 +42,72 @@
   float: left;
   margin-right: 10px;
 }
+.ResumeItemDetails .description-text {
+  float: left;
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 100%;
+  clear: both;
+  margin-bottom: 10px;
+}
+.ResumeItemDetails .description-two-column {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.ResumeItemDetails .description-column {
+  display: flex;
+  flex-shrink: 1;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 15px;
+}
+.ResumeItemDetails .description-column img,
+.ResumeItemDetails .description-column video,
+.ResumeItemDetails .description-column iframe {
+  margin: 0px auto;
+  width: 100%;
+  height: 300px;
+}
+.ResumeItemDetails .description-column img {
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+.ResumeItemDetails .description-column .description-video {
+  float: left;
+  clear: both;
+}
 .ResumeItemDetails .description {
   color: #015a67;
   display: flex;
   float: left;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-top: 0px;
-  padding: 25px 25px;
+  padding: 20px 25px;
   background-color: #fff;
   width: 100%;
   font-size: 1.3rem;
   line-height: 2rem;
 }
-.ResumeItemDetails .description .column {
-  display: flex;
-}
-.ResumeItemDetails .description .column .description-text {
-  float: left;
-  min-width: 70%;
-  flex-grow: 1;
+.bullets {
+  list-style-type: none;
   clear: both;
-  font-weight: bols;
+  margin-top: 10px;
 }
-.ResumeItemDetails .description .column .description-video {
+.bullets li {
   float: left;
   clear: both;
+  background-color: rgba(0,0,0,0.05);
+  margin-bottom: 5px;
+  padding: 10px 10px;
+  color: #fff;
 }
-.ResumeItemDetails .description .column .bullets {
-  list-style-type: square;
-  min-width: 70%;
-}
-.ResumeItemDetails .description .column .bullets li {
-  margin-left: 10px;
+.bullets li .bullet-text {
+  color: #015a67;
+  font-size: 16px;
 }
 .resItem {
   animation: slideIn forwards;
@@ -112,6 +147,46 @@
 }
 .invisible {
   display: none;
+}
+@-moz-keyframes Bullet-In {
+  0% {
+    height: 0px;
+    padding: 0px 0px;
+  }
+  100% {
+    height: 20px;
+    padding: 15px 15px;
+  }
+}
+@-webkit-keyframes Bullet-In {
+  0% {
+    height: 0px;
+    padding: 0px 0px;
+  }
+  100% {
+    height: 20px;
+    padding: 15px 15px;
+  }
+}
+@-o-keyframes Bullet-In {
+  0% {
+    height: 0px;
+    padding: 0px 0px;
+  }
+  100% {
+    height: 20px;
+    padding: 15px 15px;
+  }
+}
+@keyframes Bullet-In {
+  0% {
+    height: 0px;
+    padding: 0px 0px;
+  }
+  100% {
+    height: 20px;
+    padding: 15px 15px;
+  }
 }
 @-moz-keyframes LogoEnter {
   0% {
@@ -468,52 +543,130 @@ html {
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-*/
 @-moz-keyframes Shrink-EnterBtn {
   0% {
     height: 40px;
@@ -655,7 +808,7 @@ table {
     border-bottom: 5px solid #fff;
   }
   100% {
-    height: 80vh;
+    height: 98vh;
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }
@@ -685,7 +838,7 @@ table {
     border-bottom: 5px solid #fff;
   }
   100% {
-    height: 80vh;
+    height: 98vh;
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }
@@ -715,7 +868,7 @@ table {
     border-bottom: 5px solid #fff;
   }
   100% {
-    height: 80vh;
+    height: 98vh;
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }
@@ -745,7 +898,7 @@ table {
     border-bottom: 5px solid #fff;
   }
   100% {
-    height: 80vh;
+    height: 98vh;
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }

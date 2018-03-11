@@ -53,38 +53,33 @@ render() {
             </div>
 
             <div class = "description">
+
+            <div class = "description-text">
+                {this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].description}
+            </div>
                 
-                <div class = "description-column">
-                    <div class = "description-text">
-
-                    {this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].description}
-                    </div>
-
-                    {this.currentExperience.bullets && <ul class = "bullets">
+            <div class = "description-two-column">
+            <div class = "description-column">
+                      {this.currentExperience.bullets && <ul class = "bullets">
                     {
                         this.currentExperience.bullets.map(x => 
-                            <li> {x} </li>
+                            <li> <div class = "bullet-text"> {x}  </div> </li>
                         )
                     }
                     </ul>
+                }
+                </div>
+                 <div class = "description-column">
+                    {
+                        this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].video && <iframe class = "videoembed" src="https://www.youtube.com/embed/rC7gUspzS9o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     }
 
-
-
+                    {
+                        this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].images &&  <img src = { this.images[this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].images[0]]}/>
+                    }
                 </div>
-
-
-                {
-                    this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].video && <iframe class = "videoembed" width="600" height="315" src="https://www.youtube.com/embed/rC7gUspzS9o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                }
-
-                {
-                    this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].images &&  <img width = "560" src = { this.images[this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].images[0]]}/>
-                }
+                </div>
             </div>
-
-         
-
             </div>
         </div>
         

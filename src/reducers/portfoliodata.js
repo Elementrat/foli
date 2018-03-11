@@ -102,7 +102,7 @@ var testData = {
         description : "Overhauled AFPC's technology, brand, and internal processes",
         start : "",
         logo : "afpc",
-        bullets : ["Designed company's visual identity", "Designed and wrote promotional material", "Created forms to improve efficiency of internal processes", "Designed and developed company website", ]
+        bullets : ["Designed company's visual identity", "Designed and wrote promotional material", "Reformed internal processes to improve organizational efficiency", "Designed and developed company site based on CEO's requirements", ]
       },
       {
         company : "Door-6",
@@ -131,8 +131,7 @@ var testData = {
         company : "Microsoft",
         title : "Program Manager Intern - Xbox One",
         description : "Led the team responsible for the new Messages experience on Xbox One through design, implementation, and release",
-        bullets : ["Responsible for a number of feature areas: Xbox App Notifications, Settings, Localization, Live Tile, XBL Signup/Sign-In + More ", "Drove daily product development standups across a range of features", "Gathered product requirements from partners and stakeholders" , "Developed and communicated product vision", "Communicated project status and risks to leadership", "Wrote tools to improve internal proccesses"],
-  
+        bullets : ["Worked with designers and developers to build plan", "Presented product vision to leadership", "Drove daily product development standup", "Managed team's work item backlog", "Kept team unblocked by following up on any and all issues"],
         start : "",
         logo : "xbox",
         video : "https://youtu.be/rC7gUspzS9o"
@@ -143,7 +142,9 @@ var testData = {
         description : "Organized and led teams on a wide range of initiatives, notably including integration of Xbox Live Signup/Signin with Minecraft on iOS/Android",
         start : "",
         logo : "xbox",
-        images : ["minecraft"]
+        images : ["minecraft"],
+        bullets : ["Responsible for a number of feature areas: Xbox App Notifications, Settings, Localization, Live Tile, XBL Signup/Sign-In + More ", "Drove daily product development standups", "Gathered + synthesized requirements from stakeholders" , "Developed and communicated product vision", "Communicated project status and risks to leadership", "Wrote tools to improve internal proccesses"],
+  
 
       }
     ]

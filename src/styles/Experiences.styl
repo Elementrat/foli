@@ -53,42 +53,64 @@ $spacerSize = 2px
         }
     }
 
+    .description-text{
+        float left
+        display inline-block
+        flex-grow 0
+        flex-shrink 0
+        width 100%
+        clear both
+        margin-bottom 10px
+    }
+
+
+    .description-two-column{
+        display flex
+        flex-direction row    
+        width 100%
+    }
+
+    .description-column{
+        display flex 
+        flex-shrink 1
+        width 100%
+        flex-direction column
+        justify-content space-between
+        margin-right 15px
+
+    img, video, iframe{
+        margin 0px auto
+        width 100%
+        height 300px
+    }
+
+    img{
+        flex-grow 0
+        flex-shrink 1
+    }
+
+    
+
+    .description-video{
+        float left    
+        clear both
+    }
+
+            
+}
+
     .description{
         color $darkAccent
         display flex
         float left
+        flex-direction row
+        flex-wrap  wrap
         padding-top 0px
-        padding 25px 25px
+        padding 20px 25px
         background-color white
         width 100%
         font-size 1.3rem
         line-height 2rem
-
-        .column{
-            display flex 
-            
-            .description-text{
-                float left
-                min-width 70%
-                flex-grow 1
-                clear both
-                font-weight bols
-            }
-
-            .description-video{
-                float left    
-                clear both
-            }
-
-            .bullets{
-                list-style-type square
-                min-width 70%
-
-                li {
-                    margin-left 10px
-                }
-            }
-        }
     }
 
     .title{
@@ -96,6 +118,38 @@ $spacerSize = 2px
 
     }
 }
+
+.bullets{
+    list-style-type none
+    clear both
+    margin-top 10px
+
+    li {
+        float left
+        clear both
+        background-color rgba(0,0,0,.05)
+        margin-bottom 5px
+        padding 10px 10px
+        color white
+
+        .bullet-text{
+            color $darkAccent
+            font-size 16px
+        }
+    }
+}
+
+@keyframes Bullet-In{
+    0%{
+        height 0px
+        padding 0px 0px
+    }    
+    100%{
+        height 20px
+        padding 15px 15px
+    }
+}
+
 
 .resItem{
     animation slideIn forwards
