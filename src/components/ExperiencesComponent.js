@@ -3,6 +3,9 @@ import '../App.css';
 import ResumeItem from '../containers/ResumeItemContainer'
 
 import minecraft from "../img/minecraft.jpg"
+import intensub2menu from "../img/intensub2menu.PNG"
+import afpcsite_testimonial from "../img/afpcsite_testimonial.PNG"
+import atmo from "../img/atmo.PNG"
 
 class ExperiencesComponent extends Component {
 
@@ -12,7 +15,10 @@ constructor(props){
     this.lastKnownSelected = 0
     this.currentExperience = this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex]
     this.images = {
-        minecraft
+        minecraft,
+        intensub2menu,
+        afpcsite_testimonial, 
+        atmo
     }
 }
 

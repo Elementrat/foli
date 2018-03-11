@@ -2,8 +2,9 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://elementrat.github.io/foli/",
+  "homepage": "https://elementrat.github.io/foli/",
   "dependencies": {
+    "npm": "^5.7.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
@@ -11,8 +12,8 @@
     "redux": "^3.7.2"
   },
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "start react-scripts start && start stylus -w src/styles/App.styl -o src/App.css",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
