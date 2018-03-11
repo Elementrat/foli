@@ -1,79 +1,78 @@
-import React, { Component } from 'react';
-import xbox_dark from '../img/xbox_dark.png'
-import xbox_light from '../img/xbox_light.png'
-import office_dark from '../img/office_dark.png'
-import office_light from '../img/office_light.png'
-import skype_dark from '../img/skype_dark.png'
-import skype_light from '../img/skype_light.png'
-import door6_dark from '../img/door6_dark.png'
-import door6_light from '../img/door6_light.png'
-import afpc_dark from '../img/afpc_dark.png'
-import afpc_light from '../img/afpc_light.png'
-import elementrat_dark from '../img/elementrat_dark.png'
-import elementrat_light from '../img/elementrat_light.png'
+import React, {Component} from 'react'
 
+import ResumeMenuItem from '../containers/ResumeMenuItemContainer'
+import ResumeItem from '../containers/ResumeItemContainer'
 
-import '../App.css';
+import minecraft from "../img/minecraft.jpg"
+import intensub2menu from "../img/intensub2menu.PNG"
+import afpcsite_testimonial from "../img/afpcsite_testimonial.PNG"
+import atmo from "../img/atmo.PNG"
 
-class ResumeItemComponent extends Component {
+import '../App.css'
 
-logos = {
-  xbox_dark,
-  xbox_light,
-  office_light,
-  office_dark,
-  skype_dark,
-  skype_light,
-  door6_dark,
-  door6_light,
-  afpc_dark,
-  afpc_light,
-  elementrat_dark,
-  elementrat_light,
-}
+class ResumeItemComponent extends React.Component{
+    
+    constructor(args){
+        super(args)
+        this.images = {
+            minecraft,
+            intensub2menu,
+            afpcsite_testimonial, 
+            atmo
+        }
+    }
+    
+    render(){
 
-constructor(props){
-    super(props)
-}
+        const vis  = this.props.ui.showEntryCard ? 'invisible' : 'visible'
+    
+        let detailsClasses = `ResumeItemDetails ${vis}`
+    
+        this.currentExperience = this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex]
 
-handleClick = () =>{
-  this.props.onSelectedResumeItem(this.props.index)
-}
+        
+        return (
+            <div class = {detailsClasses} opacity = {this.props.i == this.props.ui.selectedResumeItemIndex ? 1 : 0} >
+            <div class = "coreInfo">
+                <div className = "company">
+                    {this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].company}
+                </div>
+                <div class = "title">
+                {this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].title}
+                </div>
+            </div>
 
-render() {
+            <div class = "description">
 
-  let delayIndex = Number(this.props.index)
-  let delayTime = (delayIndex*.3)
+            <div class = "description-text">
+                {this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].description}
+            </div>
+                
+            <div class = "description-two-column">
+            <div class = "description-column">
+                      {this.currentExperience.bullets && <ul class = "bullets">
+                    {
+                        this.currentExperience.bullets.map(x => 
+                            <li> <div class = "bullet-text"> {x}  </div> </li>
+                        )
+                    }
+                    </ul>
+                }
+                </div>
+                 <div class = "description-column">
+                    {
+                        this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].video && <iframe class = "videoembed" src="https://www.youtube.com/embed/rC7gUspzS9o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    }
 
-  let logoStr = this.props.experience.logo
-  let isSelected = this.props.index == this.props.selectedResumeItemIndex
-
-  logoStr +=  isSelected ? '_light' : '_dark'
-  let bgColor = isSelected ? 'rgba(255,255,255,255)' : 'rgba(0,0,0,255)'
-
-  let srcString = this.logos[logoStr] // `url(/img/${logoStr}.png`
-
-  let imgBind = {
-    backgroundImage : `url(${srcString})`,
-    animationDelay : delayTime +'s',
-    animationDuration : '.5s',
-  }
-
-  let imgClassName = isSelected ? "item-selected" : "item-not-selected"
-  let imgClasses = `logo ${imgClassName}`
-
-  let resItemClasses = `resItem ${imgClassName}`
-
-    return (
-      <div className = {resItemClasses} onClick = {this.handleClick}>
-
-        <div className = {imgClasses} style = {imgBind}>
-
-        </div>
-      </div>
-
-    )
-  }
+                    {
+                        this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].images &&  <img src = { this.images[this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].images[0]]}/>
+                    }
+                </div>
+                </div>
+            </div>
+            </div>
+        )
+    }
 }
 
 export default ResumeItemComponent

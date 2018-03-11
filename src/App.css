@@ -23,6 +23,8 @@
   color: #fff;
   border-radius: 3px;
   flex-wrap: wrap;
+  animation: ResumeItemDetails-In 1s ease;
+  animation-fill-mode: forwards;
 }
 .ResumeItemDetails .coreInfo {
   width: 100%;
@@ -91,7 +93,7 @@
   padding: 20px 25px;
   background-color: #fff;
   width: 100%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 2rem;
 }
 .bullets {
@@ -800,7 +802,7 @@ table {
     color: #00799e;
     border-bottom: 5px solid #fff;
   }
-  60% {
+  80% {
     height: 250px;
   }
   90% {
@@ -830,7 +832,7 @@ table {
     color: #00799e;
     border-bottom: 5px solid #fff;
   }
-  60% {
+  80% {
     height: 250px;
   }
   90% {
@@ -860,7 +862,7 @@ table {
     color: #00799e;
     border-bottom: 5px solid #fff;
   }
-  60% {
+  80% {
     height: 250px;
   }
   90% {
@@ -890,7 +892,7 @@ table {
     color: #00799e;
     border-bottom: 5px solid #fff;
   }
-  60% {
+  80% {
     height: 250px;
   }
   90% {

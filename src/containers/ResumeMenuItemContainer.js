@@ -1,12 +1,11 @@
 import { connect } from 'react-redux'
 import { selectResumeItem } from '../actions/index.js'
-import ResumeItemComponent from '../components/ResumeItemComponent'
+import ResumeMenuItemComponent from '../components/ResumeMenuItemComponent'
 
 const mapStateToProps = state => {
     return {
        selectedResumeItemIndex : state.ui.selectedResumeItemIndex,
-       portfoliodata : state.portfoliodata,
-       ui : state.ui
+       portfoliodata : state.portfoliodata
     }
 }
 
@@ -19,9 +18,9 @@ const mapDispatchToProps = dispatch => {
 }
 
 
-const ResumeItem = connect(
+const ResumeMenuItem = connect(
     mapStateToProps,
     mapDispatchToProps
-)(ResumeItemComponent)
+)(ResumeMenuItemComponent)
 
-export default ResumeItem
+export default ResumeMenuItem

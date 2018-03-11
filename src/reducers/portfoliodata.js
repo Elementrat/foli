@@ -91,11 +91,11 @@ var testData = {
       {
         company : "Elementrat Games",
         title : "Freelance Game Developer (High School)",
-        description : "Designed, developed, and released multiple flash-based games",
+        description : "During High School, I designed, developed, and released several flash-based games.",
         start : "",
         logo : "elementrat",
         images : ["intensub2menu"],
-        bullets : ["4 released titles, innumerable prototypes developed", "Combined, 6.5 million plays online", "Played across 300+ websites", "Sold in-game branding licenses to web portals"]
+        bullets : ["Released 4 titles", "Developed innumerable prototypes", "Combined, 6.5 million plays online", "Played across 300+ websites", "Sold in-game branding licenses to web portals"]
       },
       {
         company : "Adams Friendship PC",
@@ -110,7 +110,7 @@ var testData = {
         company : "Door-6",
         title : "Game Developer Intern",
         description : "Developed player profile API and assisted in game design",
-        bullets : ["Analyzed requirements and produced actionable plan", "Independently developed player profile server stack", "Contributed gameplay concepts and feedback during team meetings"],
+        bullets : ["Analyzed requirements and produced dev plan", "Developed profile server API", "Contributed gameplay concepts and feedback"],
         start : "",
         images : ["atmo"],
         logo : "door6"
@@ -135,7 +135,7 @@ var testData = {
         company : "Microsoft - Xbox One",
         title : "Program Manager Intern",
         description : "Led the team responsible for the new Messages experience on Xbox One through design, implementation, and release",
-        bullets : ["Worked with designers and developers to build plan", "Presented product vision to leadership", "Drove daily product development standup", "Managed team's work item backlog", "Kept team unblocked by following up on any and all issues"],
+        bullets : ["Worked with design+devs to build plan", "Presented product vision to leadership", "Drove daily product development standup", "Managed team's work item backlog", "Kept team unblocked and on-schedule", "Communicated project status with partners"],
         start : "",
         logo : "xbox",
         video : "https://youtu.be/rC7gUspzS9o"
