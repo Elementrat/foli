@@ -17,7 +17,7 @@ var testData = {
         name : "C#"
       },
       {
-        name : "Unreal Engine Blueprints#"
+        name : "Unreal Engine Blueprints"
       },
       {
         name : "Actionscript (RIP)"
@@ -90,19 +90,19 @@ var testData = {
   experiences : [
       {
         company : "Elementrat Games",
-        title : "Freelance Game Developer",
+        title : "Freelance Game Developer (High School)",
         description : "Designed, developed, and released multiple flash-based games",
         start : "",
         logo : "elementrat",
-        bullets : ["6.5 million plays", "Played on 300+ websites", "Branding licenses sold to web portals"]
+        bullets : ["4 released titles, innumerable prototypes", "6.5 million plays", "Played on 300+ websites", "Sold in-game branding licenses to web portals"]
       },
       {
         company : "Adams Friendship PC",
         title : "Project Manager",
-        description : "Overhauled the technology and brand of a small local business",
+        description : "Overhauled AFPC's technology, brand, and internal processes",
         start : "",
         logo : "afpc",
-        bullets : ["Designed Logo", "Designed and wrote promotional material", "Designed new internal forms and processes", "Designed and developed website"]
+        bullets : ["Designed company's visual identity", "Designed and wrote promotional material", "Created forms to improve efficiency of internal processes", "Designed and developed company website", ]
       },
       {
         company : "Door-6",
@@ -115,7 +115,7 @@ var testData = {
         company : "Microsoft",
         title : "Program Manager Intern - Office",
         description : "Worked on features for browser-based PowerPoint presenters",
-        bullets : ["Gathered requirements from stakeholders", "Developed and communicated product vision", "Wrote detailed technical specifications"],
+        bullets : ["Gathered requirements from stakeholders", "Worked with developers to build plan", "Developed and communicated product vision to leadership", "Wrote detailed technical specifications"],
         start : "",
         logo : "office"
       },
@@ -123,7 +123,7 @@ var testData = {
         company : "Microsoft",
         title : "Program Manager Intern - Skype",
         description : "Worked on features to improve large meeting scenario experience",
-        bullets : ["Gathered requirements from stakeholders", "Developed and communicated product vision", "Wrote detailed technical specifications", "Developed feature prototype"],
+        bullets : ["Gathered requirements from stakeholders", "Developed and communicated product vision to leadership", "Wrote detailed technical specifications", "Developed and demo'd proof of concept feature prototype"],
         start : "",
         logo : "skype"
       },
@@ -131,6 +131,8 @@ var testData = {
         company : "Microsoft",
         title : "Program Manager Intern - Xbox One",
         description : "Led the team responsible for the new Messages experience on Xbox One through design, implementation, and release",
+        bullets : ["Responsible for a number of feature areas: Xbox App Notifications, Settings, Localization, Live Tile, XBL Signup/Sign-In + More ", "Drove daily product development standups across a range of features", "Gathered product requirements from partners and stakeholders" , "Developed and communicated product vision", "Communicated project status and risks to leadership", "Wrote tools to improve internal proccesses"],
+  
         start : "",
         logo : "xbox",
         video : "https://youtu.be/rC7gUspzS9o"

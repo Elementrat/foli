@@ -22,8 +22,6 @@
   background-color: whites;
   color: #fff;
   border-radius: 3px;
-  display: block;
-  min-height: 100px;
   flex-wrap: wrap;
 }
 .ResumeItemDetails .coreInfo {
@@ -49,18 +47,32 @@
   display: flex;
   float: left;
   padding-top: 0px;
-  height: 300px;
   padding: 25px 25px;
   background-color: #fff;
   width: 100%;
   font-size: 1.3rem;
+  line-height: 2rem;
 }
-.ResumeItemDetails .description .description-text {
-  float: left;
-  width: 100%;
+.ResumeItemDetails .description .column {
+  display: flex;
 }
-.ResumeItemDetails .description .description-video {
+.ResumeItemDetails .description .column .description-text {
   float: left;
+  min-width: 70%;
+  flex-grow: 1;
+  clear: both;
+  font-weight: bols;
+}
+.ResumeItemDetails .description .column .description-video {
+  float: left;
+  clear: both;
+}
+.ResumeItemDetails .description .column .bullets {
+  list-style-type: square;
+  min-width: 70%;
+}
+.ResumeItemDetails .description .column .bullets li {
+  margin-left: 10px;
 }
 .resItem {
   animation: slideIn forwards;
@@ -309,20 +321,30 @@
   color: #fff;
   margin-bottom: 10px;
   align-items: center;
+  justify-content: center;
   margin-top: 70px;
   padding: 0px 25px;
 }
 .Nav .icons {
   display: flex;
   align-items: center;
+  flex-shrink: 1;
+  flex-grow: 0;
+  height: 40px;
 }
 .Nav .icons .icon {
   width: 40px;
   height: 40px;
-  flex-shrink: 0;
+  flex-shrink: 1;
+  opacity: 0.3;
+  margin-top: 20px;
   padding: 0px 0px;
   margin-left: 10px;
   fill: #fff;
+  transition: opacity 0.2s ease;
+}
+.Nav .icons .icon:hover {
+  opacity: 1;
 }
 .Nav .name {
   float: left;
@@ -342,6 +364,7 @@
   margin: 0px auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   color: #fff;
   position: relative;
 }
@@ -349,6 +372,17 @@
   float: left;
   padding: 0px 25px;
   cursor: pointer;
+  position: relative;
+}
+.menu-item:hover:after {
+  background-color: #029db3;
+  color: #fff;
+  width: 100%;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+  content: '';
+  position: absolute;
 }
 .menu-item .selected {
   background-color: #fff;
@@ -356,13 +390,17 @@
 .menu-item .not-selected {
   background-color: #000;
 }
-.menu-item .not-selected:hover {
+.menu-item .not-selected :hover {
   background-color: #f00;
 }
 .App {
   padding: 0px 0px;
   width: 100vw;
+  height: 100vh;
   font-family: 'Open Sans';
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 html {
   background-color: #015a67;
@@ -383,14 +421,10 @@ html {
 }
 .NameHolder {
   font-weight: 400;
-  position: absolute;
+  position: relative;
   color: #fff;
-  left: 0;
-  right: 0;
   height: 200px;
   width: 200px;
-  top: 0;
-  bottom: 0;
   margin: auto auto;
   overflow: hidden;
   border-bottom: 5px solid #029db3;
@@ -431,6 +465,55 @@ html {
   color: #015a67;
   cursor: pointer;
 }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
 @-moz-keyframes Shrink-EnterBtn {
   0% {
     height: 40px;

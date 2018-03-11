@@ -10,6 +10,7 @@ constructor(props){
     super(props)
     this.selectedItemIndex = 0
     this.lastKnownSelected = 0
+    this.currentExperience = this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex]
     this.images = {
         minecraft
     }
@@ -21,6 +22,8 @@ render() {
     const vis  = this.props.ui.showEntryCard ? 'invisible' : 'visible'
     const itemClasses = `ResumeItems ${vis}` 
     let detailsClasses = `ResumeItemDetails ${vis}`
+
+    this.currentExperience = this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex]
 
     let randDir = Math.random()
     let coreInfoAni = {
@@ -50,13 +53,31 @@ render() {
             </div>
 
             <div class = "description">
-                <div class = "description-text">
-                {this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].description}
+                
+                <div class = "description-column">
+                    <div class = "description-text">
+
+                    {this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].description}
+                    </div>
+
+                    {this.currentExperience.bullets && <ul class = "bullets">
+                    {
+                        this.currentExperience.bullets.map(x => 
+                            <li> {x} </li>
+                        )
+                    }
+                    </ul>
+                    }
+
+
+
                 </div>
 
+
                 {
-                    this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].video && <iframe class = "videoembed" width="560" height="315" src="https://www.youtube.com/embed/rC7gUspzS9o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].video && <iframe class = "videoembed" width="600" height="315" src="https://www.youtube.com/embed/rC7gUspzS9o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 }
+
                 {
                     this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].images &&  <img width = "560" src = { this.images[this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].images[0]]}/>
                 }

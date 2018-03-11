@@ -4,9 +4,6 @@ $itemHeight = 125px
 $radiusSize = 3px
 $spacerSize = 2px
 
-.Resume{
-}
-
 .selected{
     background-color white   
     color $darkAccent 
@@ -34,8 +31,6 @@ $spacerSize = 2px
     background-color whites
     color white
     border-radius $radiusSize
-    display block
-    min-height 100px
     flex-wrap wrap
 
     .coreInfo{
@@ -58,28 +53,41 @@ $spacerSize = 2px
         }
     }
 
-    .company {
-
-    }
-
     .description{
         color $darkAccent
         display flex
         float left
         padding-top 0px
-        height 300px
         padding 25px 25px
         background-color white
         width 100%
         font-size 1.3rem
+        line-height 2rem
 
-        .description-text{
-            float left
-            width 100%
-        }
+        .column{
+            display flex 
+            
+            .description-text{
+                float left
+                min-width 70%
+                flex-grow 1
+                clear both
+                font-weight bols
+            }
 
-        .description-video{
-            float left    
+            .description-video{
+                float left    
+                clear both
+            }
+
+            .bullets{
+                list-style-type square
+                min-width 70%
+
+                li {
+                    margin-left 10px
+                }
+            }
         }
     }
 
