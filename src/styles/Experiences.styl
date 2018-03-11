@@ -41,13 +41,13 @@ $spacerSize = 2px
         background-color black
         margin-bottom $spacerSize solid $darkAccent
         padding 5px 5px
+        font-size 1.4rem
 
         div{
             color white
             padding 0px 25px
             box-sizing border-box
             text-indent 0px
-            font-size 1.2rem
             float left
             margin-right 10px
         }
@@ -111,7 +111,7 @@ $spacerSize = 2px
         padding 20px 25px
         background-color white
         width 100%
-        font-size 1.3rem
+        font-size 1.4rem
         line-height 2rem
     }
 
@@ -122,21 +122,20 @@ $spacerSize = 2px
 }
 
 .bullets{
-    list-style-type none
+    list-style-type square
     clear both
     margin-top 10px
+    margin-left 15px
 
     li {
         float left
         clear both
-        background-color $lightAccent // rgba(0,0,0,.05)
+      
         margin-bottom 5px
-        padding 10px 10px
-        color white
+        color $darkAccent
 
         .bullet-text{
-            color white
-            font-size 16px
+            color $darkAccent
         }
     }
 }
