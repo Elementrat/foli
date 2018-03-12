@@ -11,7 +11,7 @@ class SkillsComponent extends React.Component{
 
     delayCSS(index){
         return {
-            animationDelay : index*.2 + "s"
+            animationDelay : index*.1 + "s"
         }
     }
 

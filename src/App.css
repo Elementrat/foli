@@ -16,7 +16,7 @@
   height: 0px;
 }
 .description {
-  color: #00799e;
+  color: #646464;
   display: flex;
   float: left;
   flex-direction: row;
@@ -109,10 +109,6 @@
   float: left;
   clear: both;
   margin-bottom: 5px;
-  color: #00799e;
-}
-.bullets li .bullet-text {
-  color: #00799e;
 }
 .resItem {
   animation: slideIn forwards;
@@ -341,7 +337,7 @@
 }
 .Skills .skill-column .skillbox .skill {
   float: left;
-  animation: Skill-In 1s ease forwards;
+  animation: Skill-In 0.5s ease forwards;
   height: 0px;
   overflow: hidden;
   background-color: #fff;
