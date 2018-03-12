@@ -10,7 +10,7 @@
   flex-direction: row;
 }
 .ResumeItemDetails-Expanded {
-  height: 500px;
+  height: 530px;
 }
 .ResumeItemDetails-Shrunk {
   height: 0px;
@@ -28,7 +28,7 @@
   background-color: #fff;
   width: 100%;
   line-height: 2rem;
-  min-height: 500px;
+  min-height: 520px;
 }
 .ResumeItemDetails {
   width: 1000px;
@@ -812,8 +812,8 @@ table {
     border-bottom: 5px solid #fff;
   }
   100% {
-    height: 760px;
-    max-height: 760px;
+    height: 800px;
+    max-height: 800px;
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }
@@ -843,8 +843,8 @@ table {
     border-bottom: 5px solid #fff;
   }
   100% {
-    height: 760px;
-    max-height: 760px;
+    height: 800px;
+    max-height: 800px;
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }
@@ -874,8 +874,8 @@ table {
     border-bottom: 5px solid #fff;
   }
   100% {
-    height: 760px;
-    max-height: 760px;
+    height: 800px;
+    max-height: 800px;
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }
@@ -905,8 +905,8 @@ table {
     border-bottom: 5px solid #fff;
   }
   100% {
-    height: 760px;
-    max-height: 760px;
+    height: 800px;
+    max-height: 800px;
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 1024px;
   }
