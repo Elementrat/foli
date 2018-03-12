@@ -9,15 +9,38 @@
   align-self: center;
   flex-direction: row;
 }
+.ResumeItemDetails-Expanded {
+  height: 500px;
+}
+.ResumeItemDetails-Shrunk {
+  height: 0px;
+}
+.description {
+  color: #00799e;
+  display: flex;
+  float: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  align-content: flex-start;
+  padding-top: 0px;
+  padding: 20px 25px;
+  background-color: #fff;
+  width: 100%;
+  line-height: 2rem;
+  min-height: 500px;
+}
 .ResumeItemDetails {
   width: 1000px;
-  margin: 0px auto;
   background-color: whites;
   color: #fff;
   border-radius: 3px;
   flex-wrap: wrap;
   animation: ResumeItemDetails-In 1s ease;
   animation-fill-mode: forwards;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  margin: 0px auto;
 }
 .ResumeItemDetails .coreInfo {
   width: 100%;
@@ -40,12 +63,12 @@
   float: left;
   display: inline-block;
   flex-grow: 0;
-  flex-shrink: 0;
+  flex-shrink: 1;
   width: 100%;
   clear: both;
   border-bottom: 1px solid #eee;
   padding-bottom: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .ResumeItemDetails .description-two-column {
   display: flex;
@@ -75,18 +98,6 @@
 .ResumeItemDetails .description-column .description-video {
   float: left;
   clear: both;
-}
-.ResumeItemDetails .description {
-  color: #00799e;
-  display: flex;
-  float: left;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-top: 0px;
-  padding: 20px 25px;
-  background-color: #fff;
-  width: 100%;
-  line-height: 2rem;
 }
 .bullets {
   list-style-type: square;

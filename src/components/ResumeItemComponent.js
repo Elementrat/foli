@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 
-import ResumeMenuItem from '../containers/ResumeMenuItemContainer'
-import ResumeItem from '../containers/ResumeItemContainer'
+
 
 import minecraft from "../img/minecraft.jpg"
 import intensub2menu from "../img/intensub2menu.PNG"
@@ -14,6 +13,7 @@ class ResumeItemComponent extends React.Component{
     
     constructor(args){
         super(args)
+
         this.images = {
             minecraft,
             intensub2menu,
@@ -24,35 +24,36 @@ class ResumeItemComponent extends React.Component{
     
     render(){
 
-        const vis  = this.props.ui.showEntryCard ? 'invisible' : 'visible'
-    
-        let detailsClasses = `ResumeItemDetails ${vis}`
+        
     
         this.currentExperience = this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex]
 
-        
+        const vis  = this.props.index == this.props.ui.selectedResumeItemIndex ? 'ResumeItemDetails-Expanded' : 'ResumeItemDetails-Shrunk'
+    
+        let detailsClasses = `ResumeItemDetails  ${vis}`
+
         return (
-            <div class = {detailsClasses} opacity = {this.props.i == this.props.ui.selectedResumeItemIndex ? 1 : 0} >
+            <div class = {detailsClasses}>
             <div class = "coreInfo">
                 <div className = "company">
-                    {this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].company}
+                    {this.props.experience.company}
                 </div>
                 <div class = "title">
-                {this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].title}
+                {this.props.experience.title}
                 </div>
             </div>
 
             <div class = "description">
 
             <div class = "description-text">
-                {this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].description}
+                {this.props.experience.description}
             </div>
                 
             <div class = "description-two-column">
             <div class = "description-column">
-                      {this.currentExperience.bullets && <ul class = "bullets">
+                      {this.props.experience.bullets && <ul class = "bullets">
                     {
-                        this.currentExperience.bullets.map(x => 
+                        this.props.experience.bullets.map(x => 
                             <li> <div class = "bullet-text"> {x}  </div> </li>
                         )
                     }
@@ -61,11 +62,11 @@ class ResumeItemComponent extends React.Component{
                 </div>
                  <div class = "description-column">
                     {
-                        this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].video && <iframe class = "videoembed" src="https://www.youtube.com/embed/rC7gUspzS9o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        this.props.experience.video && <iframe class = "videoembed" src="https://www.youtube.com/embed/rC7gUspzS9o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     }
 
                     {
-                        this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].images &&  <img src = { this.images[this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex].images[0]]}/>
+                        this.props.experience.images &&  <img src = { this.images[this.props.experience.images[0]]}/>
                     }
                 </div>
                 </div>

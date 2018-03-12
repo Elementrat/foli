@@ -22,33 +22,22 @@ render() {
     return (
         <div className = "Resume">
 
-        <div className = {itemClasses} > 
-        {
-            //this.props.experiences
-            this.props.portfoliodata.experiences.map((exp, i) =>
-                <ResumeMenuItem experience = {exp}  index={i}/>
-            )
-        }
+            <div className = {itemClasses} > 
+            {
+                //this.props.experiences
+                this.props.portfoliodata.experiences.map((exp, i) =>
+                    <ResumeMenuItem experience = {exp}  index={i}/>
+                )
+            }
+            </div>
 
+            {
+                this.props.portfoliodata.experiences.map((exp, i) =>
+                    <ResumeItem experience = {exp}  index={i}/>
+                )
+
+            }
         </div>
-
-        {
-             this.props.portfoliodata.experiences.map((exp, i) =>
-             i == this.props.ui.selectedResumeItemIndex && <ResumeItem experience = {exp}  index={i}/>
-            )
-
-        }
-
-
-        {
-
-       
-    
-        }
-
-
-        </div>
-        
     )
   }
 }

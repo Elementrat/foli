@@ -147,7 +147,7 @@ var testData = {
         start : "",
         logo : "xbox",
         images : ["minecraft"],
-        bullets : ["Responsible for a number of feature areas: Xbox App Notifications, Settings, Localization, Live Tile, XBL Signup/Sign-In + More ", "Drove daily product development standups", "Gathered + synthesized partner requirements" , "Developed and communicated product vision", "Communicated project status to leadership", "Wrote tools to improve internal proccesses"],
+        bullets : [ "Gathered + synthesized partner requirements" , "Developed and communicated product vision", "Drove daily product development standups","Communicated project status to leadership", "Wrote tools to improve internal proccesses"],
       }
     ]
 }
