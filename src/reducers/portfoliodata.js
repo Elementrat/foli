@@ -29,10 +29,7 @@ var testData = {
         name : "Node / Express"
       },
       {
-        name : "Blender"
-      },
-      {
-        name : "Gulp"
+        name : "PM Tools (JIRA, TFS, Trello) "
       },
       {
         name : "Webpack"
@@ -48,6 +45,9 @@ var testData = {
       },
       {
         name : "Git"
+      },
+      {
+        name : "Blender"
       },
       {
         name : "Ionic"
