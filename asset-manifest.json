@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.a21bc7d1.css",
-  "main.css.map": "static/css/main.a21bc7d1.css.map",
-  "main.js": "static/js/main.c2d2fde9.js",
-  "main.js.map": "static/js/main.c2d2fde9.js.map",
+  "main.css": "static/css/main.9f24d23d.css",
+  "main.css.map": "static/css/main.9f24d23d.css.map",
+  "main.js": "static/js/main.11c7ceb5.js",
+  "main.js.map": "static/js/main.11c7ceb5.js.map",
   "static\\media\\afpcsite_testimonial.PNG": "static/media/afpcsite_testimonial.4e16ef38.PNG",
   "static\\media\\atmo.PNG": "static/media/atmo.70d57cbc.PNG",
   "static\\media\\elementrat_dark.png": "static/media/elementrat_dark.235c4348.png",
@@ -10,5 +10,6 @@
   "static\\media\\intensub2menu.PNG": "static/media/intensub2menu.78e714e4.PNG",
   "static\\media\\linkedin.svg": "static/media/linkedin.bc8e55bb.svg",
   "static\\media\\minecraft.jpg": "static/media/minecraft.09ee617b.jpg",
+  "static\\media\\office_full.jpg": "static/media/office_full.05693efa.jpg",
   "static\\media\\skype_light.png": "static/media/skype_light.1211207c.png"
 }
