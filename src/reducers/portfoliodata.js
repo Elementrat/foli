@@ -41,6 +41,12 @@ var testData = {
         name : "Vue / Angular / React + Redux"
       },
       {
+        name : "Affinity Designer / Photoshop"
+      },
+      {
+        name : "Balsamiq"
+      },
+      {
         name : "Git"
       },
       {
@@ -121,6 +127,7 @@ var testData = {
         description : "Worked on features for browser-based PowerPoint presenters",
         bullets : ["Gathered requirements from stakeholders", "Worked with developers to build plan", "Presented product vision to leadership", "Wrote detailed technical specifications"],
         start : "",
+        images : ["office_full"],
         logo : "office"
       },
       {
@@ -128,6 +135,7 @@ var testData = {
         title : "Program Manager Intern",
         description : "Worked on features to improve large meeting scenario experience",
         bullets : ["Gathered requirements from stakeholders", "Presented product vision to leadership", "Wrote detailed technical specifications", "Developed proof of concept feature prototype"],
+        images : ["skype_full"],
         start : "",
         logo : "skype"
       },

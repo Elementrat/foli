@@ -6,6 +6,8 @@ import minecraft from "../img/minecraft.jpg"
 import intensub2menu from "../img/intensub2menu.PNG"
 import afpcsite_testimonial from "../img/afpcsite_testimonial.PNG"
 import atmo from "../img/atmo.PNG"
+import skype_full from "../img/skype_full.png"
+import office_full from "../img/office_full.jpg"
 
 import '../App.css'
 
@@ -18,7 +20,9 @@ class ResumeItemComponent extends React.Component{
             minecraft,
             intensub2menu,
             afpcsite_testimonial, 
-            atmo
+            atmo,
+            skype_full,
+            office_full
         }
     }
     
@@ -31,6 +35,13 @@ class ResumeItemComponent extends React.Component{
         const vis  = this.props.index == this.props.ui.selectedResumeItemIndex ? 'ResumeItemDetails-Expanded' : 'ResumeItemDetails-Shrunk'
     
         let detailsClasses = `ResumeItemDetails  ${vis}`
+
+        let srcString =  this.props.experience.images  ? this.images[this.props.experience.images[0]] : ""
+        
+        this.imgBind = {
+            backgroundImage : `url(${srcString})`,
+        }
+        
 
         return (
             <div class = {detailsClasses}>
@@ -64,9 +75,9 @@ class ResumeItemComponent extends React.Component{
                     {
                         this.props.experience.video && <iframe class = "videoembed" src="https://www.youtube.com/embed/rC7gUspzS9o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     }
-
                     {
-                        this.props.experience.images &&  <img src = { this.images[this.props.experience.images[0]]}/>
+
+                        this.props.experience.images &&  <div class = "imgBox" style = {this.imgBind }> </div>
                     }
                 </div>
                 </div>

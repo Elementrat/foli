@@ -43,13 +43,12 @@ handleClick = () =>{
 render() {
 
   let delayIndex = Number(this.props.index)
-  let delayTime = this.props.index == 0 ? 0 : .5 + (delayIndex*.3)
+  let delayTime =  (delayIndex*.2)
 
   let logoStr = this.props.experience.logo
   let isSelected = this.props.index == this.props.selectedResumeItemIndex
 
   logoStr +=  isSelected ? '_light' : '_dark'
-  let bgColor = isSelected ? 'rgba(255,255,255,255)' : 'rgba(0,0,0,255)'
 
   let srcString = this.logos[logoStr] // `url(/img/${logoStr}.png`
 
@@ -58,7 +57,7 @@ render() {
   let imgBind = {
     backgroundImage : `url(${srcString})`,
     animationDelay : delayTime +'s',
-    animationDuration : '.5s',
+    animationDuration : '1s',
   }
 
   let imgClassName = isSelected ? "item-selected" : "item-not-selected"
