@@ -28,8 +28,6 @@ class ResumeItemComponent extends React.Component{
     
     render(){
 
-        
-    
         this.currentExperience = this.props.portfoliodata.experiences[this.props.ui.selectedResumeItemIndex]
 
         const vis  = this.props.index == this.props.ui.selectedResumeItemIndex ? 'ResumeItemDetails-Expanded' : 'ResumeItemDetails-Shrunk'
