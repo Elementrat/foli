@@ -554,8 +554,12 @@ html {
     padding: 0px 15px;
   }
   .Nav .name {
-    font-size: 15px;
-    margin-right: 1px;
+    font-size: 14px;
+    margin-right: 0px;
+  }
+  .Nav .icons .icon {
+    width: 25px;
+    height: 25px;
   }
   .resItem .logo {
     width: 50px;
@@ -566,7 +570,7 @@ html {
     padding: 20px 20px;
   }
   .menu-item {
-    padding: 0px 15px;
+    padding: 0px 10px;
   }
   .ResumeItemDetails .coreInfo {
     height: 30px;

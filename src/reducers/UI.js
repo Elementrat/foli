@@ -5,7 +5,7 @@ export const ENTER_SITE = "ENTER_SITE"
 const ui = (state = {
     
     showEntryCard : true,
-    activeTab : "experience",
+    activeTab : "none",
     selectedResumeItemIndex : 0
     
     }, action) =>{
