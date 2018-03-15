@@ -49,6 +49,10 @@
   background-color: #000;
   margin-bottom: 2px solid #00799e;
   padding: 5px 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 .ResumeItemDetails .coreInfo div {
   color: #fff;
@@ -575,6 +579,8 @@ html {
   .ResumeItemDetails .coreInfo {
     height: 30px;
     line-height: 30px;
+    padding-right: 0px;
+    font-size: 12px;
   }
   .ResumeItemDetails .description-two-column {
     flex-direction: column;
