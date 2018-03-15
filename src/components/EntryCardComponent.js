@@ -51,11 +51,12 @@ render() {
         Alex Sohail
       </div>
 
-      <div className = "EnterBtn" style = {btnCSS} onClick={this.props.onEnterClick}>
+
+        <Nav/>
+        <div className = "EnterBtn" style = {btnCSS} onClick={this.props.onEnterClick}>
         View Portfolio
       </div>
 
-        <Nav/>
         {this.checkTabActive('experience') && <Experiences />}
         {this.checkTabActive('skills') && <Skills />}
 

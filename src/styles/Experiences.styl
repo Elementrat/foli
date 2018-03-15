@@ -4,10 +4,11 @@ $itemHeight = 125px
 $radiusSize = 3px
 $spacerSize = 2px
 
+
 .ResumeItems{
     background-color white
-    width 1024px
-    height $itemHeight
+    width 100%
+    max-width 1024px
     margin auto auto
     display flex
     align-items center
@@ -28,25 +29,24 @@ $spacerSize = 2px
     height 0px
 }
 
-
 .description{
-        color rgba(100,100,100,255)
-        display flex
-        float left
-        flex-direction row
-        flex-wrap  wrap
-        box-sizing border-box
-        align-content flex-start
-        padding-top 0px
-        padding 20px 25px
-        background-color white
-        width 100%
-        line-height 2rem
-        min-height 520px
+    color rgba(100,100,100,255)
+    display flex
+    float left
+    flex-direction row
+    flex-wrap  wrap
+    box-sizing border-box
+    align-content flex-start
+    padding-top 0px
+    padding 20px 25px
+    background-color white
+    width 100%
+    line-height 24px
+    min-height 520px
 }
 
 .ResumeItemDetails{
-    width 1000px
+    width 95%
     background-color whites
     color white
     border-radius $radiusSize
@@ -73,9 +73,7 @@ $spacerSize = 2px
             float left
             margin-right 10px
         }
-    }
-
-     
+    }   
 
     .description-text{
         float left
@@ -88,7 +86,6 @@ $spacerSize = 2px
         padding-bottom 20px
         margin-bottom 25px
     }
-
 
     .description-two-column{
         display flex
@@ -105,7 +102,7 @@ $spacerSize = 2px
         margin-right 15px
 
     .imgBox{
-        width 470px
+        width 100%
         background-position center top
         background-size contain
         background-repeat no-repeat
@@ -127,9 +124,7 @@ $spacerSize = 2px
     .description-video{
         float left    
         clear both
-    }
-
-            
+    }            
 }
 }
 
@@ -181,7 +176,7 @@ $spacerSize = 2px
         height $itemHeight
         background-position-x center
         background-position-y 150px
-        background-size 75px 75px
+        background-size ($itemHeight*.6) ($itemHeight*.6)
         background-repeat no-repeat
         width $itemHeight
         box-sizing border-box
@@ -208,7 +203,7 @@ $spacerSize = 2px
         background-position-y: 200px
     }
     100%{
-        background-position-y: 30px
+        background-position-y: 50%
     }
 }
 

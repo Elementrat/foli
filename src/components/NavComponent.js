@@ -18,9 +18,9 @@ class NavComponent extends React.Component{
 
         return (
 
-            <div class = "Nav">
+            <div className = "Nav">
            
-            <div class = "name">
+            <div className = "name">
                  Alex Sohail
              </div>
 

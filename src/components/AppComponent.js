@@ -15,7 +15,6 @@ class AppComponent extends React.Component {
 
     let elms =
       <div className="App">
-        <div class = "grain"> </div>
         <EntryCard/>
       </div>
 

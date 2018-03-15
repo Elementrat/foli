@@ -1,0 +1,91 @@
+$smallBlockSize = 50px
+$mobileCoreHeight = 30px
+
+//MOBILE
+@media only screen and (max-width 1025px){
+
+    @keyframes slideIn{
+        0%{
+            width 0px
+            height 0px
+        }
+        50%{
+            height 0px
+            width $smallBlockSize
+        }
+        100%{
+            width  $smallBlockSize
+            height  $smallBlockSize
+        }
+    }
+
+    .App{
+        font-size 13px
+    }
+    
+    .Nav{
+        margin-top 5px
+        padding 0px 15px
+
+        .name{
+            font-size 15px    
+            margin-right 1px
+        }
+    }
+
+    .resItem {
+        .logo{
+            width $smallBlockSize 
+            height $smallBlockSize
+            background-size ($smallBlockSize*.8) ($smallBlockSize*.8)
+        }
+    }
+
+    .description{
+        padding 20px 20px
+    }
+
+    .menu-item{
+        padding 0px 15px    
+    }
+
+    .ResumeItemDetails .coreInfo{
+        height $mobileCoreHeight
+        line-height $mobileCoreHeight
+    }
+
+    .ResumeItemDetails .description-two-column {
+        flex-direction column
+        margin 0px auto
+        width auto
+        flex-shrink 1
+    }
+
+    .ResumeItemDetails .coreInfo div{
+        padding-left 15px
+        padding-right 15px    
+    }
+
+    .description-column{
+        margin 0px auto
+
+        .bullets{
+            margin-left 0px
+            padding-left 15px
+        }
+
+    }
+    .ResumeItemDetails-Expanded{
+        height 100vh    
+    }
+
+    .NameHolder{
+        overflow-y scroll
+    }
+
+    .Skills{
+        flex-direction column    
+    }
+    
+}
+
