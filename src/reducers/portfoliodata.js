@@ -70,7 +70,7 @@ var testData = {
         name : "Educational Tools",
       },
       {
-        name : "Data Bisualization"
+        name : "Data Visualization"
       },
       {
         name : "Game Design & Dev",

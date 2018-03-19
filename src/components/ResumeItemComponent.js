@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
 
-
-
 import minecraft from "../img/minecraft.jpg"
 import intensub2menu from "../img/intensub2menu.PNG"
 import afpcsite_testimonial from "../img/afpcsite_testimonial.PNG"
