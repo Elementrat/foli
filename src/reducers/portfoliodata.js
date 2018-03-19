@@ -32,10 +32,19 @@ var testData = {
         name : "PM Tools (JIRA, TFS, Trello) "
       },
       {
-        name : "Webpack"
+        name : "Vue / Angular / React + Redux"
       },
       {
-        name : "Vue / Angular / React + Redux"
+        name : "Express"
+      },
+      {
+        name : "Meteor"
+      },
+      {
+        name : "MongoDB"
+      },
+      {
+        name : "NEO4J"
       },
       {
         name : "Affinity Designer / Photoshop"
@@ -58,31 +67,28 @@ var testData = {
     ],
     interests : [
       {
-        name : "Project Management",
+        name : "Educational Tools",
       },
       {
-        name : "UX & Interaction Design",
+        name : "Data Bisualization"
       },
       {
         name : "Game Design & Dev",
       },
       {
-        name : "3D Modelling",
+        name : "Augmented Reality",
       },
       {
-        name : "Graphic Design",
-      },
-      {
-        name : "Theater & Acting",
-      },
-      {
-        name : "Skateboarding",
-      },
-      {
-        name : "Learning Korean",
+        name : "Virtual Reality",
       },
       {
         name : "Hackathons",
+      },
+      {
+        name : "Emerging Web Standards",
+      },
+      {
+        name : "Learning Korean",
       },
       {
         name : "Improv Comedy",
@@ -101,16 +107,16 @@ var testData = {
         start : "",
         logo : "elementrat",
         images : ["intensub2menu"],
-        bullets : ["Released 4 titles", "Developed innumerable prototypes", "Combined, 6.5 million plays online", "Played across 300+ websites", "Sold in-game branding licenses to web portals"]
+        bullets : ["Released 4 titles", "Combined, 6.5 million plays online", "Played across 300+ websites", "Sold in-game branding licenses to web portals"]
       },
       {
         company : "Adams Friendship PC",
-        title : "Project Manager",
-        description : "Overhauled the company's technology, brand, and internal processes",
+        title : "Project Manager & Software Developer",
+        description : "Developed company's visual identity and technology",
         start : "",
         logo : "afpc",
         images : ["afpcsite_testimonial"],
-        bullets : ["Designed company's visual identity", "Designed and wrote promotional material", "Improved org. efficiency", "Designed + developed company site", "Designed + developed apps and services"]
+        bullets : ["Designed company's visual identity", "Designed and wrote promotional material", "Improved organizational efficiency", "Designed + developed company site", "Designed + developed apps and services"]
       },
       {
         company : "Door-6",
@@ -133,7 +139,7 @@ var testData = {
       {
         company : "Microsoft - Skype",
         title : "Program Manager Intern",
-        description : "Worked on features to improve large meeting scenario experience",
+        description : "Designed a solution for a gap within the existing feature set of Microsoft Office",
         bullets : ["Gathered requirements from stakeholders", "Presented product vision to leadership", "Wrote detailed technical specifications", "Developed proof of concept feature prototype"],
         images : ["skype_full"],
         start : "",

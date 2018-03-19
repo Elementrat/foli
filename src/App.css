@@ -70,8 +70,8 @@
   width: 100%;
   clear: both;
   border-bottom: 1px solid #eee;
-  padding-bottom: 20px;
-  margin-bottom: 25px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 .ResumeItemDetails .description-two-column {
   display: flex;
@@ -556,6 +556,8 @@ html {
   .Nav {
     margin-top: 5px;
     padding: 0px 15px;
+    width: 90%;
+    margin: 5px auto;
   }
   .Nav .name {
     font-size: 14px;
@@ -582,6 +584,9 @@ html {
     padding-right: 0px;
     font-size: 12px;
   }
+  .ResumeItems {
+    width: 95%;
+  }
   .ResumeItemDetails .description-two-column {
     flex-direction: column;
     margin: 0px auto;
@@ -601,9 +606,6 @@ html {
   }
   .ResumeItemDetails-Expanded {
     height: 100vh;
-  }
-  .NameHolder {
-    overflow-y: scroll;
   }
   .Skills {
     flex-direction: column;
