@@ -17,23 +17,24 @@ import '../App.css';
 
 class ResumeMenuItemComponent extends Component {
 
-logos = {
-  xbox_dark,
-  xbox_light,
-  office_light,
-  office_dark,
-  skype_dark,
-  skype_light,
-  door6_dark,
-  door6_light,
-  afpc_dark,
-  afpc_light,
-  elementrat_dark,
-  elementrat_light,
-}
+
 
 constructor(props){
     super(props)
+    this.logos = {
+      xbox_dark,
+      xbox_light,
+      office_light,
+      office_dark,
+      skype_dark,
+      skype_light,
+      door6_dark,
+      door6_light,
+      afpc_dark,
+      afpc_light,
+      elementrat_dark,
+      elementrat_light,
+    }
 }
 
 handleClick = () =>{
@@ -53,7 +54,6 @@ render() {
   let srcString = this.logos[logoStr] // `url(/img/${logoStr}.png`
 
 
-
   let imgBind = {
     backgroundImage : `url(${srcString})`,
     animationDelay : delayTime +'s',
@@ -68,7 +68,7 @@ render() {
     return (
       <div className = {resItemClasses} onClick = {this.handleClick}>
 
-        <div className = {imgClasses} style = {imgBind}>
+        <div className = {imgClasses} style = {this.imgBind}>
 
         </div>
       </div>

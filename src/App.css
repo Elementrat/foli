@@ -808,7 +808,6 @@ html {
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 100%;
     max-width: 1024px;
-    overflow-y: scroll;
   }
 }
 @-webkit-keyframes Shrink-NameHolder {
@@ -829,7 +828,6 @@ html {
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 100%;
     max-width: 1024px;
-    overflow-y: scroll;
   }
 }
 @-o-keyframes Shrink-NameHolder {
@@ -850,7 +848,6 @@ html {
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 100%;
     max-width: 1024px;
-    overflow-y: scroll;
   }
 }
 @keyframes Shrink-NameHolder {
@@ -871,6 +868,5 @@ html {
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 100%;
     max-width: 1024px;
-    overflow-y: scroll;
   }
 }
