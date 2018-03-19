@@ -616,6 +616,8 @@ html {
   }
   .Skills {
     flex-direction: column;
+    overflow-y: scroll;
+    height: 800px;
   }
 @-moz-keyframes slideIn {
     0% {
