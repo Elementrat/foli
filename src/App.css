@@ -10,7 +10,7 @@
   flex-direction: row;
 }
 .ResumeItemDetails-Expanded {
-  height: 530px;
+  height: 450px;
 }
 .ResumeItemDetails-Shrunk {
   height: 0px;
@@ -93,7 +93,7 @@
   background-position: center top;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 350px;
+  min-height: 220px;
 }
 .ResumeItemDetails .description-column img,
 .ResumeItemDetails .description-column video,
@@ -611,7 +611,8 @@ html {
     padding-left: 15px;
   }
   .ResumeItemDetails-Expanded {
-    height: 100vh;
+    height: 80vh;
+    overflow-y: scroll;
   }
   .Skills {
     flex-direction: column;
@@ -807,6 +808,7 @@ html {
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 100%;
     max-width: 1024px;
+    overflow-y: scroll;
   }
 }
 @-webkit-keyframes Shrink-NameHolder {
@@ -827,6 +829,7 @@ html {
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 100%;
     max-width: 1024px;
+    overflow-y: scroll;
   }
 }
 @-o-keyframes Shrink-NameHolder {
@@ -847,6 +850,7 @@ html {
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 100%;
     max-width: 1024px;
+    overflow-y: scroll;
   }
 }
 @keyframes Shrink-NameHolder {
@@ -867,5 +871,6 @@ html {
     border-bottom: 5px solid rgba(255,255,255,0);
     width: 100%;
     max-width: 1024px;
+    overflow-y: scroll;
   }
 }
