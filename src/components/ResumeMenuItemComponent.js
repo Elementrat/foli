@@ -17,8 +17,6 @@ import '../App.css';
 
 class ResumeMenuItemComponent extends Component {
 
-
-
 constructor(props){
     super(props)
     this.logos = {
@@ -50,12 +48,10 @@ render() {
   let isSelected = this.props.index == this.props.selectedResumeItemIndex
 
   logoStr +=  isSelected ? '_light' : '_dark'
-
-  let srcString = this.logos[logoStr] // `url(/img/${logoStr}.png`
-
-
-  let imgBind = {
-    backgroundImage : `url(${srcString})`,
+  let logoSrc = this.logos[logoStr]
+  
+  this.imgBind = {
+    backgroundImage : `url(${logoSrc})`,
     animationDelay : delayTime +'s',
     animationDuration : '1s',
   }
