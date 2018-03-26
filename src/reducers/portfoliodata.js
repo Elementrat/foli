@@ -103,7 +103,7 @@ var testData = {
       {
         company : "Elementrat Games",
         title : "Freelance Game Developer",
-        description : "During High School, I designed, developed, and released several flash-based games.",
+        description : "Designed, developed, and released several flash based games, and sold licenses, as well as in-game advertising and branding rights to web portals.",
         start : "",
         logo : "elementrat",
         images : ["intensub2menu"],
@@ -112,7 +112,7 @@ var testData = {
       {
         company : "Adams Friendship PC",
         title : "Project Manager & Software Developer",
-        description : "Developed company's visual identity and technology",
+        description : "Designed and implemented their website, which included a PC hardware customization experience, and Windows app, which provided customers easy access to tech support.",
         start : "",
         logo : "afpc",
         images : ["afpcsite_testimonial"],
@@ -121,8 +121,8 @@ var testData = {
       {
         company : "Door-6",
         title : "Game Developer Intern",
-        description : "Developed player profile API and assisted in game design",
-        bullets : ["Analyzed requirements and produced dev plan", "Developed profile server API", "Contributed gameplay concepts and feedback"],
+        description : "Contributed to the iOS / Android game \"Atmosphere\"  by building the player profile API service, and participating in the design process",
+        bullets : ["Analyzed requirements and produced development plan","Contributed gameplay concepts and feedback"],
         start : "",
         images : ["atmo"],
         logo : "door6"
@@ -157,11 +157,11 @@ var testData = {
       {
         company : "Microsoft - Xbox",
         title : "Program Manager",
-        description : "Organized and led teams on a wide range of initiatives, notably including integration of Xbox Live Accounts with Minecraft on iOS/Android, and a new Xbox Live Signup experience on Windows 10",
+        description : "Planned and shipped new Xbox gaming experiences on Windows 10, iOS , and Android that increased monthly and daily active users, including UX enabling Microsoft / Xbox Live accounts to be used in Minecraft, and an all-new Xbox Live Sign-Up / Sign in experience on Windows 10. Was promoted in my first year, left to build passion projects.",
         start : "",
         logo : "xbox",
         images : ["minecraft"],
-        bullets : [ "Gathered + synthesized partner requirements" , "Developed and communicated product vision", "Drove daily product development standups","Communicated project status to leadership", "Wrote tools to improve internal proccesses"],
+        bullets : [ "Developed, presented, and received sign-off on product vision" , "Created experience mockups & storyboards", "Managed work items & unblocked development teams during execution","Communicated project status with leadership", "Drove relationships & dependencies with partner teams ", "Wrote tools to improve internal proccesses"],
       }
     ]
 }

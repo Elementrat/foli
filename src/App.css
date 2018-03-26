@@ -8,9 +8,10 @@
   justify-content: center;
   align-self: center;
   flex-direction: row;
+  border-bottom: 2px solid #000;
 }
 .ResumeItemDetails-Expanded {
-  height: 450px;
+  height: 550px;
 }
 .ResumeItemDetails-Shrunk {
   height: 0px;
@@ -132,7 +133,6 @@
   box-sizing: border-box;
   overflow: hidden;
   background-color: #fff;
-  margin-right: 10px;
   cursor: pointer;
 }
 .resItem .logo {
