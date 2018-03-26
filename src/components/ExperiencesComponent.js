@@ -25,14 +25,14 @@ render() {
             <div className = {itemClasses} > 
             {
                 //this.props.experiences
-                this.props.portfoliodata.experiences().map((exp, i) =>
+                this.props.portfoliodata.experiences.map((exp, i) =>
                     <ResumeMenuItem experience = {exp}  index={i}/>
                 )
             }
             </div>
 
             {
-                this.props.portfoliodata.experiences().map((exp, i) =>
+                this.props.portfoliodata.experiences.map((exp, i) =>
                     <ResumeItem experience = {exp}  index={i}/>
                 )
 
